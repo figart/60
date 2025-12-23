@@ -10,9 +10,12 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    {%- assign list_title = page.list_title | default: "Posts" -%}
-    {%- if list_title != "" -%}
-      <h2 class="post-list-heading">{{ list_title }}</h2>
+    {%- if page.list_title -%}
+      {%- if page.list_title != "" -%}
+        <h2 class="post-list-heading">{{ page.list_title }}</h2>
+      {%- endif -%}
+    {%- else -%}
+      <h2 class="post-list-heading">Posts</h2>
     {%- endif -%}
     <ul class="post-list">
       {%- for post in site.posts -%}
