@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Coming Together"
-date: 2025-12-23 12:00:00 -0500
+date: 2025-12-23 08:00:00 -0500
 categories:
 ---
 
