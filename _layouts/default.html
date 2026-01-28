@@ -15,6 +15,21 @@
 
     {%- include footer.html -%}
 
+    <script>
+      // Theme toggle functionality
+      (function() {
+        var toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+          toggle.addEventListener('click', function() {
+            var currentTheme = document.documentElement.getAttribute('data-theme');
+            var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+          });
+        }
+      })();
+    </script>
+
   </body>
 
 </html>

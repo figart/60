@@ -10,6 +10,7 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
+// Legacy Sass variables (keeping for compatibility)
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #2a7ae2 !default;
@@ -19,6 +20,35 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
+
+// CSS Custom Properties for theming
+:root {
+  --text-color: #111;
+  --background-color: #fdfdfd;
+  --brand-color: #2a7ae2;
+  --brand-color-dark: #1756a9;
+  --grey-color: #828282;
+  --grey-color-light: #e8e8e8;
+  --grey-color-dark: #424242;
+  --code-background: #eef;
+  --table-row-alt: #f9f9f9;
+  --table-header-bg: #f0f0f0;
+  --table-border: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --text-color: #e0e0e0;
+  --background-color: #1a1a1a;
+  --brand-color: #5ca0f2;
+  --brand-color-dark: #7db5f5;
+  --grey-color: #9e9e9e;
+  --grey-color-light: #333;
+  --grey-color-dark: #ccc;
+  --code-background: #2d2d2d;
+  --table-row-alt: #242424;
+  --table-header-bg: #2a2a2a;
+  --table-border: #444;
+}
 
 // Width of the content area
 $content-width:    800px !default;
