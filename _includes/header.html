@@ -7,6 +7,22 @@
 
     {%- if page_paths -%}
       <nav class="site-nav">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+            <circle cx="12" cy="12" r="5"/>
+            <rect x="11" y="1" width="2" height="3" rx="1"/>
+            <rect x="11" y="20" width="2" height="3" rx="1"/>
+            <rect x="20" y="11" width="3" height="2" rx="1"/>
+            <rect x="1" y="11" width="3" height="2" rx="1"/>
+            <rect x="17.3" y="4.3" width="2" height="3" rx="1" transform="rotate(45 18.3 5.8)"/>
+            <rect x="4.3" y="16.7" width="2" height="3" rx="1" transform="rotate(45 5.3 18.2)"/>
+            <rect x="16.7" y="17.3" width="3" height="2" rx="1" transform="rotate(45 18.2 18.3)"/>
+            <rect x="4.7" y="4.7" width="3" height="2" rx="1" transform="rotate(45 6.2 5.7)"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -23,22 +39,6 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-            <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-              <circle cx="12" cy="12" r="5"/>
-              <rect x="11" y="1" width="2" height="3" rx="1"/>
-              <rect x="11" y="20" width="2" height="3" rx="1"/>
-              <rect x="20" y="11" width="3" height="2" rx="1"/>
-              <rect x="1" y="11" width="3" height="2" rx="1"/>
-              <rect x="17.3" y="4.3" width="2" height="3" rx="1" transform="rotate(45 18.3 5.8)"/>
-              <rect x="4.3" y="16.7" width="2" height="3" rx="1" transform="rotate(45 5.3 18.2)"/>
-              <rect x="16.7" y="17.3" width="3" height="2" rx="1" transform="rotate(45 18.2 18.3)"/>
-              <rect x="4.7" y="4.7" width="3" height="2" rx="1" transform="rotate(45 6.2 5.7)"/>
-            </svg>
-            <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-            </svg>
-          </button>
         </div>
       </nav>
     {%- endif -%}

@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit * 0.5;
+  margin-bottom: 0.9375rem;
 }
 
 
@@ -79,7 +79,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 1.875rem;
 }
 
 li {
@@ -104,25 +104,23 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: var(--brand-color);
-  text-decoration: none;
-  transition: color 0.2s ease;
+  color: var(--text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--grey-color-light);
+  text-underline-offset: 0.15em;
+  transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
 
   &:visited {
-    color: var(--brand-color-dark);
+    color: var(--text-color);
   }
 
   &:hover {
-    color: var(--text-color);
-    text-decoration: underline;
+    opacity: 0.6;
+    text-decoration-color: var(--grey-color);
   }
 
   .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
+    opacity: 0.6;
   }
 }
 
@@ -132,10 +130,10 @@ a {
  */
 blockquote {
   color: var(--grey-color);
-  border-left: 4px solid var(--grey-color-light);
-  padding-left: $spacing-unit * 0.5;
+  border-left: 0.25rem solid var(--grey-color-light);
+  padding-left: 0.9375rem;
   @include relative-font-size(1.125);
-  letter-spacing: -1px;
+  letter-spacing: -0.0625rem;
   font-style: italic;
   transition: color 0.3s ease, border-color 0.3s ease;
 
@@ -153,17 +151,17 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border: 1px solid var(--grey-color-light);
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   background-color: var(--code-background);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 code {
-  padding: 1px 5px;
+  padding: 0.0625rem 0.3125rem;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   overflow-x: auto;
 
   > code {
@@ -179,8 +177,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -188,10 +185,9 @@ pre {
   @extend %clearfix;
 
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit * 0.5;
-    padding-left: $spacing-unit * 0.5;
+    max-width: calc(#{$content-width} - #{$spacing-unit});
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
   }
 }
 
@@ -213,18 +209,18 @@ pre {
  */
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     display: inline-block;
     fill: var(--grey-color);
-    padding-right: 5px;
+    padding-right: 0.3125rem;
     vertical-align: text-top;
     transition: fill 0.3s ease;
 }
 
 .social-media-list {
   li + li {
-    padding-top: 5px;
+    padding-top: 0.3125rem;
   }
 }
 
@@ -234,7 +230,7 @@ pre {
  * Tables
  */
 table {
-  margin-bottom: $spacing-unit;
+  margin-bottom: 1.875rem;
   width: 100%;
   text-align: $table-text-align;
   color: var(--text-color);
@@ -247,7 +243,7 @@ table {
     }
   }
   th, td {
-    padding: ($spacing-unit * 0.3333333333) ($spacing-unit * 0.5);
+    padding: 0.625rem 0.9375rem;
   }
   th {
     background-color: var(--table-header-bg);

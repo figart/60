@@ -3,12 +3,12 @@
 // Define defaults for each variable.
 
 $base-font-family: "Newsreader", Georgia, "Times New Roman", serif !default;
-$base-font-size:   16px !default;
+$base-font-size:   1rem !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$small-font-size:  0.875rem !default;
+$base-line-height: 1.65 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:     1.875rem !default;
 
 // Legacy Sass variables (keeping for compatibility)
 $text-color:       #111 !default;
@@ -51,10 +51,10 @@ $table-text-align: left !default;
 }
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    40.625rem !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-palm:          37.5rem !default;
+$on-laptop:        50rem !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -70,7 +70,7 @@ $on-laptop:        800px !default;
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+  font-size: #{$ratio}rem;
 }
 
 // Import partials.
