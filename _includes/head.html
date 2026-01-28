@@ -7,9 +7,13 @@
     // Initialize theme before page render to prevent flash
     (function() {
       var savedTheme = localStorage.getItem('theme');
-      // Default to dark if no preference saved
-      var theme = savedTheme || 'dark';
-      document.documentElement.setAttribute('data-theme', theme);
+      // Default to dark if no preference saved (or if theme version changed)
+      if (!savedTheme || localStorage.getItem('theme-version') !== '2') {
+        savedTheme = 'dark';
+        localStorage.setItem('theme', 'dark');
+        localStorage.setItem('theme-version', '2');
+      }
+      document.documentElement.setAttribute('data-theme', savedTheme);
     })();
   </script>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
