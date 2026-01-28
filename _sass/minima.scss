@@ -24,7 +24,7 @@ $table-text-align: left !default;
 // CSS Custom Properties for theming
 :root {
   --text-color: #111;
-  --background-color: #fdfdfd;
+  --background-color: #f5f5f5;
   --brand-color: #2a7ae2;
   --brand-color-dark: #1756a9;
   --grey-color: #828282;
@@ -37,7 +37,7 @@ $table-text-align: left !default;
 }
 
 [data-theme="dark"] {
-  --text-color: #e0e0e0;
+  --text-color: #c8c8c8;
   --background-color: #1a1a1a;
   --brand-color: #5ca0f2;
   --brand-color-dark: #7db5f5;
