@@ -30,6 +30,66 @@
       })();
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      // Transform consecutive images into carousels
+      (function() {
+        var content = document.querySelector('.post-content');
+        if (!content) return;
+
+        // Find paragraphs with 3+ images (Jekyll wraps consecutive markdown images in one <p>)
+        var paragraphs = content.querySelectorAll('p');
+        var carouselIndex = 0;
+
+        paragraphs.forEach(function(p) {
+          var imgs = p.querySelectorAll('img');
+          if (imgs.length >= 3) {
+            var splide = document.createElement('div');
+            splide.className = 'splide gallery-carousel';
+            splide.id = 'carousel-' + carouselIndex;
+
+            var track = document.createElement('div');
+            track.className = 'splide__track';
+
+            var list = document.createElement('ul');
+            list.className = 'splide__list';
+
+            imgs.forEach(function(img) {
+              var slide = document.createElement('li');
+              slide.className = 'splide__slide';
+
+              var fig = document.createElement('figure');
+              fig.appendChild(img.cloneNode(true));
+              if (img.alt) {
+                var caption = document.createElement('figcaption');
+                caption.textContent = img.alt;
+                fig.appendChild(caption);
+              }
+              slide.appendChild(fig);
+              list.appendChild(slide);
+            });
+
+            track.appendChild(list);
+            splide.appendChild(track);
+
+            p.parentNode.insertBefore(splide, p);
+            p.remove();
+
+            new Splide('#carousel-' + carouselIndex, {
+              type: 'slide',
+              perPage: 1,
+              gap: '1rem',
+              arrows: true,
+              pagination: true,
+              rewind: true
+            }).mount();
+
+            carouselIndex++;
+          }
+        });
+      })();
+    </script>
+
   </body>
 
 </html>

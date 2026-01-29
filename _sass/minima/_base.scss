@@ -53,6 +53,17 @@ main {
 
 
 /**
+ * Horizontal rules
+ */
+hr {
+  border: none;
+  border-top: 1px solid var(--grey-color-light);
+  margin: 2rem 0;
+  transition: border-color 0.3s ease;
+}
+
+
+/**
  * Images
  */
 img {
@@ -129,11 +140,11 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: var(--grey-color);
-  border-left: 0.25rem solid var(--grey-color-light);
-  padding-left: 0.9375rem;
-  @include relative-font-size(1.125);
-  letter-spacing: -0.0625rem;
+  color: var(--text-color);
+  border-left: 2px solid var(--grey-color-light);
+  margin: 2.5rem 0 2.5rem 1rem;
+  padding-left: 1.25rem;
+  @include relative-font-size(1.2);
   font-style: italic;
   transition: color 0.3s ease, border-color 0.3s ease;
 
