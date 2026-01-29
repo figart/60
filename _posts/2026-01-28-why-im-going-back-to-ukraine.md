@@ -49,8 +49,6 @@ Every dollar goes toward the vehicle and the delivery. 100%. I cover my own trav
 
 I don't know if I'll do this every year. I don't know if the war will still be grinding on next March. I hope not. But right now, the need is real, and I've got five weeks to raise the money.
 
----
-
 ![Waiting for the ferry](/assets/images/waiting-for-the-ferry.webp)
 ![In addition to cars, JC and I brought with us a Ukraine-American friendship flag signed by many of the members of our Rotary Club in San Antonio](/assets/images/ukraine-american-flag.webp)
 ![On this particular mission, at some point my American buddy, JC, affectionately coined the term "Preston's Eleven" referring to the drivers. That's Preston in the middle, undisputably in charge of his crew.](/assets/images/prestons-eleven.webp)
@@ -77,5 +75,3 @@ Here's [the link to my Rotary Club's Ukraine page](https://www.rotarysa.org/init
 If you can give, give. If you can't, maybe share this with someone who can. In either case you have my sincere gratitude. If you give, I'll "take you along" best I can with photos and updates along the way.
 
 If I happen to make it back to the same cafe in Folkestone, I won't order the cappuccino this time. But I will celebrate my birthday again somewhere along the road to Lviv. I hope you'll reach out!
-
----
