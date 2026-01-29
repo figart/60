@@ -562,6 +562,19 @@
   cursor: zoom-in;
 }
 
+.lightbox-counter {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1001;
+}
+
 /**
  * Post content links
  */
