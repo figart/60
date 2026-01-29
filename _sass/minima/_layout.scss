@@ -549,3 +549,28 @@
 .post-content .gallery-carousel img {
   cursor: zoom-in;
 }
+
+/**
+ * Post content links
+ */
+.post-content a {
+  color: #e87400;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 0.2s ease;
+
+  [data-theme="dark"] & {
+    font-weight: normal;
+  }
+
+  &:visited {
+    color: #e87400;
+  }
+
+  &:hover {
+    text-decoration-color: #e87400;
+    opacity: 1;
+  }
+}
