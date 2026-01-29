@@ -1,0 +1,109 @@
+name: Optimize Images
+
+on:
+  push:
+    branches: ["master"]
+    paths:
+      - 'assets/images/**'
+      - '_posts/**'
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Find and process .optimize images
+        id: process
+        run: |
+          # Track if any changes were made
+          CHANGES_MADE=false
+
+          # Find all .optimize files recursively in assets/images
+          while IFS= read -r -d '' file; do
+            if [[ -z "$file" ]]; then
+              continue
+            fi
+
+            echo "Processing: $file"
+
+            # Get directory and filename
+            dir=$(dirname "$file")
+            filename=$(basename "$file")
+
+            # Extract the base name (everything before .optimize)
+            # and check for width pattern
+            if [[ "$filename" =~ ^(.+)\.optimize-([0-9]+)w\.([^.]+)$ ]]; then
+              # Has width specification
+              base="${BASH_REMATCH[1]}"
+              width="${BASH_REMATCH[2]}"
+              ext="${BASH_REMATCH[3]}"
+              output="$dir/$base.webp"
+
+              echo "  Converting with resize to ${width}px width"
+              convert "$file" -resize "${width}x>" -quality 85 "$output"
+
+            elif [[ "$filename" =~ ^(.+)\.optimize\.([^.]+)$ ]]; then
+              # No width specification
+              base="${BASH_REMATCH[1]}"
+              ext="${BASH_REMATCH[2]}"
+              output="$dir/$base.webp"
+
+              echo "  Converting without resize"
+              convert "$file" -quality 85 "$output"
+
+            else
+              echo "  Skipping: doesn't match expected pattern"
+              continue
+            fi
+
+            # Verify output was created
+            if [[ -f "$output" ]]; then
+              echo "  Created: $output"
+
+              # Update references in markdown files
+              old_ref=$(basename "$file")
+              new_ref=$(basename "$output")
+
+              # Update _posts/*.md and _posts/*.markdown
+              find _posts -type f \( -name "*.md" -o -name "*.markdown" \) -exec \
+                sed -i "s|$old_ref|$new_ref|g" {} \;
+
+              # Update root markdown files
+              for mdfile in *.markdown; do
+                if [[ -f "$mdfile" ]]; then
+                  sed -i "s|$old_ref|$new_ref|g" "$mdfile"
+                fi
+              done
+
+              # Delete original file
+              rm "$file"
+              echo "  Deleted original: $file"
+
+              CHANGES_MADE=true
+            else
+              echo "  ERROR: Failed to create $output"
+            fi
+
+          done < <(find assets/images -type f -name "*.optimize*.*" -print0 2>/dev/null)
+
+          echo "changes_made=$CHANGES_MADE" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.process.outputs.changes_made == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+
+          # Only commit if there are staged changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Optimize images: convert to WebP"
+            git push
+          fi
