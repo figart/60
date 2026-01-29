@@ -54,7 +54,7 @@ I don't know if I'll do this every year. I don't know if the war will still be g
 ![On this particular mission, at some point my American buddy, JC, affectionately coined the term "Preston's Eleven" referring to the drivers. That's Preston in the middle, undisputably in charge of his crew.](/assets/images/prestons-eleven.webp)
 ![It wasn't all work. One day we got to play by taking a ride in a vintage Russian Mil Mi-8 helicopter.](youtube:LWzQPU2zOlg)
 
-What $5,000 gets:
+## What $5,000 gets
 
 - One vehicle, purchased and repaired
 - Paperwork and registration
