@@ -4,9 +4,10 @@
 .site-header {
   min-height: 3.5rem;
   padding-top: min(2.8125rem, 3vw);
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--background-color);
 }
 
 .site-title {
