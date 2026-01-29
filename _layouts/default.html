@@ -132,6 +132,44 @@
       })();
     </script>
 
+    <script>
+      // Lightbox functionality
+      (function() {
+        var content = document.querySelector('.post-content');
+        if (!content) return;
+
+        // Create lightbox overlay
+        var overlay = document.createElement('div');
+        overlay.className = 'lightbox-overlay';
+        var lightboxImg = document.createElement('img');
+        overlay.appendChild(lightboxImg);
+        document.body.appendChild(overlay);
+
+        // Close lightbox on click
+        overlay.addEventListener('click', function() {
+          overlay.classList.remove('active');
+        });
+
+        // Open lightbox when clicking on images
+        content.addEventListener('click', function(e) {
+          var img = e.target;
+          if (img.tagName === 'IMG' && img.closest('figure')) {
+            e.preventDefault();
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            overlay.classList.add('active');
+          }
+        });
+
+        // Close on escape key
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            overlay.classList.remove('active');
+          }
+        });
+      })();
+    </script>
+
   </body>
 
 </html>
