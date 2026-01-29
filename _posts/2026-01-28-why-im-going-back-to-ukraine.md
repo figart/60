@@ -39,8 +39,6 @@ Back home, I'm not so sure many of us realize we're also in a fight. Or what we'
 
 So I'm going back.
 
----
-
 ## Can you help me?
 
 In five weeks, I'll fly to London, meet up with the convoy, and do it all again. This time I'm raising $5,000 to help cover the cost of one vehicle—its purchase, repairs, and paperwork. Once again, I'll drive east across Europe, straight into Ukraine, and hand the keys to someone who needs it.
