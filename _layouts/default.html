@@ -32,18 +32,68 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
-      // Transform consecutive images into carousels
+      // Transform markdown images into figures with captions, and 3+ into carousels
       (function() {
         var content = document.querySelector('.post-content');
         if (!content) return;
 
-        // Find paragraphs with 3+ images (Jekyll wraps consecutive markdown images in one <p>)
-        var paragraphs = content.querySelectorAll('p');
+        // Helper: create media element (img or YouTube iframe)
+        // Syntax: ![caption](youtube:VIDEO_ID)
+        function createMediaElement(img) {
+          var src = img.getAttribute('src') || '';
+          var youtubeMatch = src.match(/^youtube:([a-zA-Z0-9_-]+)$/);
+
+          if (youtubeMatch) {
+            var iframe = document.createElement('iframe');
+            iframe.src = 'https://www.youtube.com/embed/' + youtubeMatch[1];
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            return iframe;
+          } else {
+            return img.cloneNode(true);
+          }
+        }
+
+        // Helper: create figure with media and optional caption
+        function createFigure(img, useWrapper) {
+          var fig = document.createElement('figure');
+          var media = createMediaElement(img);
+
+          if (useWrapper) {
+            var wrapper = document.createElement('div');
+            wrapper.className = 'media-wrapper';
+            wrapper.appendChild(media);
+            fig.appendChild(wrapper);
+          } else {
+            fig.appendChild(media);
+          }
+
+          if (img.alt) {
+            var caption = document.createElement('figcaption');
+            caption.textContent = img.alt;
+            fig.appendChild(caption);
+          }
+          return fig;
+        }
+
+        var paragraphs = Array.from(content.querySelectorAll('p'));
         var carouselIndex = 0;
 
         paragraphs.forEach(function(p) {
           var imgs = p.querySelectorAll('img');
-          if (imgs.length >= 3) {
+
+          // Single or double images: convert to figure with caption
+          if (imgs.length === 1 || imgs.length === 2) {
+            var container = document.createDocumentFragment();
+            imgs.forEach(function(img) {
+              container.appendChild(createFigure(img, false));
+            });
+            p.parentNode.insertBefore(container, p);
+            p.remove();
+          }
+          // 3+ images: convert to carousel
+          else if (imgs.length >= 3) {
             var splide = document.createElement('div');
             splide.className = 'splide gallery-carousel';
             splide.id = 'carousel-' + carouselIndex;
@@ -57,15 +107,7 @@
             imgs.forEach(function(img) {
               var slide = document.createElement('li');
               slide.className = 'splide__slide';
-
-              var fig = document.createElement('figure');
-              fig.appendChild(img.cloneNode(true));
-              if (img.alt) {
-                var caption = document.createElement('figcaption');
-                caption.textContent = img.alt;
-                fig.appendChild(caption);
-              }
-              slide.appendChild(fig);
+              slide.appendChild(createFigure(img, true));
               list.appendChild(slide);
             });
 

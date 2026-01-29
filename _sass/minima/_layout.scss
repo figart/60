@@ -266,12 +266,20 @@
       height: auto;
     }
 
+    iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+    }
+
     figcaption {
       margin-top: 0.75rem;
       line-height: 1.3;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-style: italic;
       color: var(--grey-color);
+      text-align: center;
     }
   }
 
@@ -291,14 +299,26 @@
       figure {
         margin: 0;
         width: 100%;
+        position: relative;
+      }
+
+      .media-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
         overflow: hidden;
       }
 
       img {
-        height: 50vw;
-        max-height: 25rem;
         width: 100%;
+        height: 100%;
         object-fit: cover;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
     }
 
@@ -313,7 +333,7 @@
 
     .splide__arrow {
       position: absolute;
-      top: 50%;
+      top: calc(50% - 1.5rem);
       transform: translateY(-50%);
       background: rgba(0, 0, 0, 0.4);
       border: none;
@@ -352,7 +372,7 @@
 
     .splide__pagination {
       position: absolute !important;
-      bottom: 2.5rem !important;
+      bottom: 4.75rem !important;
       left: 50% !important;
       right: auto !important;
       transform: translateX(-50%) !important;
