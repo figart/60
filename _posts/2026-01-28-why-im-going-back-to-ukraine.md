@@ -56,10 +56,26 @@ I don't know if I'll do this every year. I don't know if the war will still be g
 ![On this particular mission, at some point my American buddy, JC, affectionately coined the term "Preston's Eleven" referring to the drivers. That's Preston in the middle, undisputably in charge of his crew.](/assets/images/prestons-eleven.webp)
 ![It wasn't all work. One day we got to play by taking a ride in a vintage Russian Mil Mi-8 helicopter.](youtube:LWzQPU2zOlg)
 
-[SECTION: The ask / donation link]
+What $5,000 gets:
 
-[SECTION: Brief closing—maybe return to the cappuccino, or the border, or simply "See you on the other side."]
+- One vehicle, purchased and repaired
+- Paperwork and registration
+- Fuel from London to Lviv
+- Keys handed directly to someone who needs it
 
-If I make it back to the same cafe in Folkestone, I won't order the cappuccino this time. But I will celebrate my birthday again somewhere along the road to Lviv. I hope you'll reach out!
+What your piece of that could look like:
+
+- $50 fills the tank once
+- $150 covers a border crossing fee
+- $500 handles a critical repair
+- $1,000 and you've bought a quarter of a car
+
+Any amount matters. This isn't a charity with overhead and galas. It's a vehicle, a driver, and a destination.
+
+Here's [the link to my Rotary Club's Ukraine page](https://www.rotarysa.org/initiatives/ukraine-relief), where you'll find a link to donate through Paypal. We're a 501c3, and we get a discount on the transaction fee because of it.
+
+If you can give, give. If you can't, maybe share this with someone who can. In either case you have my sincere gratitude. If you give, I'll "take you along" best I can with photos and updates along the way.
+
+If I happen to make it back to the same cafe in Folkestone, I won't order the cappuccino this time. But I will celebrate my birthday again somewhere along the road to Lviv. I hope you'll reach out!
 
 ---
