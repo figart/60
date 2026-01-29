@@ -51,21 +51,21 @@ Every dollar goes toward the vehicle and the delivery. 100%. I cover my own trav
 
 I don't know if I'll do this every year. I don't know if the war will still be grinding on next March. I hope not. But right now, the need is real, and I've got five weeks to raise the money.
 
-![Waiting for the ferry](/assets/images/ukraine/waiting-for-the-ferry.webp)
+![Waiting for the ferry at Dover.](/assets/images/ukraine/waiting-for-the-ferry.webp)
 ![In addition to cars, JC and I brought with us a Ukraine-American friendship flag signed by many of the members of our Rotary Club in San Antonio](/assets/images/ukraine/ukraine-american-flag.webp)
 ![On this particular mission, at some point my American buddy, JC, affectionately coined the term "Preston's Eleven" referring to the drivers. That's Preston in the middle, undisputably in charge of his crew.](/assets/images/ukraine/prestons-eleven.webp)
 ![It wasn't all work. One day we got to play by taking a ride in a vintage Russian Mil Mi-8 helicopter.](youtube:LWzQPU2zOlg)
-![Some of the crew in Lviv](/assets/images/ukraine/some-of-the-crew-in-lviv.webp)
-![The ambulance](/assets/images/ukraine/the-ambulance.webp)
-![Lviv soldier mural](/assets/images/ukraine/lviv-soldier-mural.webp)
+![Some of the crew hanging out in Lviv.](/assets/images/ukraine/some-of-the-crew-in-lviv.webp)
+![The ambulance I became very familiar with.](/assets/images/ukraine/the-ambulance.webp)
+![Lviv soldier mural. Murals of this nature are not uncommon throughout Ukraine.](/assets/images/ukraine/lviv-soldier-mural.webp)
 ![Lviv cemetery](/assets/images/ukraine/lviv-cemetary.webp)
+![At city hall in Lviv.](/assets/images/ukraine/at-city-hall-in-lviv.webp)
+![Funeral procession, Lviv. These funerals can occur once or twice a day. This one involved three fallen soldiers and their families, along with a huge crowd of townspeople. A more solemn occasion I've never witnessed.](/assets/images/ukraine/funeral-procession-lviv.webp)
 ![Mourning families at funeral](/assets/images/ukraine/mourning-families-at-funeral.webp)
-![At city hall in Lviv](/assets/images/ukraine/at-city-hall-in-lviv.webp)
-![Funeral procession, Lviv](/assets/images/ukraine/funeral-procession-lviv.webp)
 ![Fallen soldier carried by comrades](/assets/images/ukraine/fallen-soldier-carried-by-comrades.webp)
-![Handing off two vehicles](/assets/images/ukraine/handing-off-two-vehicles.webp)
-![On the road toward Ukraine](/assets/images/ukraine/on-the-road-toward-ukraine.webp)
-![Memorial posters in Lviv](/assets/images/ukraine/memorial-posters-in-lviv.webp)
+![Handing off two vehicles to a couple soldiers. This is one of the more satisfying aspects of the trip. These guys are so grateful. Faces obscured at the request of the soldiers.](/assets/images/ukraine/handing-off-two-vehicles.webp)
+![On the road toward Ukraine. While Europeans drive on the right side of the road, thankfully, our British vehicles had right-side steering wheels. A first for me.](/assets/images/ukraine/on-the-road-toward-ukraine.webp)
+![Memorial posters in Lviv. Most cities have memorials of some sort, and they're all incredibly moving.](/assets/images/ukraine/memorial-posters-in-lviv.webp)
 
 **What $5,000 buys:**
 
