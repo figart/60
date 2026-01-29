@@ -11,7 +11,7 @@ Folkestone is a coastal town where, eighty years earlier, tens of thousands of s
 My 60th birthday arrived at midnight just after crossing the Channel, and my comrades helped celebrate the occasion by singing happy birthday to me at an Esso roadside fuel station just up the coast from Dunkirk. Sixty years old, standing under fluorescent lights, surrounded by a cool bunch of Brits. I'd imagined something different—a nice dinner, maybe, or at least a cake that wasn't from a petrol station—but honestly, it was perfect. After that the days blurred, driving twelve hours at a stretch trying to keep up with a British crew who have done this run literally dozens of times, the way some people commute to an office.
 
 <figure>
-  <img src="/assets/images/highway-north-of-dunkirk.webp" alt="Highway north of Dunkirk">
+  <img src="/assets/images/ukraine/highway-north-of-dunkirk.webp" alt="Highway north of Dunkirk">
   <figcaption>This is the Esso station where I celebrated my 60th birthday almost a year ago, though when I was there (this image is from Google Maps) it was after midnight, and, of course, dark.</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ So I'm going back.
 
 In five weeks, I'll fly to London, meet up with the convoy, and do it all again. This time I'm raising $5,000 to help cover the cost of one vehicle—its purchase, repairs, and paperwork. Once again, I'll drive east across Europe, straight into Ukraine, and hand the keys to someone who needs it.
 
-![The convoy en route to Lviv](/assets/images/convoy-moves-toward-lviv.webp)
+![The convoy en route to Lviv](/assets/images/ukraine/convoy-moves-toward-lviv.webp)
 
 Every dollar goes toward the vehicle and the delivery. 100%. I cover my own travel.
 
@@ -51,10 +51,21 @@ Every dollar goes toward the vehicle and the delivery. 100%. I cover my own trav
 
 I don't know if I'll do this every year. I don't know if the war will still be grinding on next March. I hope not. But right now, the need is real, and I've got five weeks to raise the money.
 
-![Waiting for the ferry](/assets/images/waiting-for-the-ferry.webp)
-![In addition to cars, JC and I brought with us a Ukraine-American friendship flag signed by many of the members of our Rotary Club in San Antonio](/assets/images/ukraine-american-flag.webp)
-![On this particular mission, at some point my American buddy, JC, affectionately coined the term "Preston's Eleven" referring to the drivers. That's Preston in the middle, undisputably in charge of his crew.](/assets/images/prestons-eleven.webp)
+![Waiting for the ferry](/assets/images/ukraine/waiting-for-the-ferry.webp)
+![In addition to cars, JC and I brought with us a Ukraine-American friendship flag signed by many of the members of our Rotary Club in San Antonio](/assets/images/ukraine/ukraine-american-flag.webp)
+![On this particular mission, at some point my American buddy, JC, affectionately coined the term "Preston's Eleven" referring to the drivers. That's Preston in the middle, undisputably in charge of his crew.](/assets/images/ukraine/prestons-eleven.webp)
 ![It wasn't all work. One day we got to play by taking a ride in a vintage Russian Mil Mi-8 helicopter.](youtube:LWzQPU2zOlg)
+![Some of the crew in Lviv](/assets/images/ukraine/some-of-the-crew-in-lviv.webp)
+![The ambulance](/assets/images/ukraine/the-ambulance.webp)
+![Lviv soldier mural](/assets/images/ukraine/lviv-soldier-mural.webp)
+![Lviv cemetery](/assets/images/ukraine/lviv-cemetary.webp)
+![Mourning families at funeral](/assets/images/ukraine/mourning-families-at-funeral.webp)
+![At city hall in Lviv](/assets/images/ukraine/at-city-hall-in-lviv.webp)
+![Funeral procession, Lviv](/assets/images/ukraine/funeral-procession-lviv.webp)
+![Fallen soldier carried by comrades](/assets/images/ukraine/fallen-soldier-carried-by-comrades.webp)
+![Handing off two vehicles](/assets/images/ukraine/handing-off-two-vehicles.webp)
+![On the road toward Ukraine](/assets/images/ukraine/on-the-road-toward-ukraine.webp)
+![Memorial posters in Lviv](/assets/images/ukraine/memorial-posters-in-lviv.webp)
 
 **What $5,000 buys:**
 
@@ -77,3 +88,5 @@ Here's [the link to my Rotary Club's Ukraine page](https://www.rotarysa.org/init
 If you can give, give. If you can't, maybe share this with someone who can. In either case you have my sincere gratitude. If you give, I'll "take you along" best I can with photos and updates along the way.
 
 If I happen to make it back to the same cafe in Folkestone, I won't order the cappuccino this time. But I will celebrate my birthday again somewhere along the road to Lviv. I hope you'll reach out!
+
+---
