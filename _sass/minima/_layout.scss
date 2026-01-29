@@ -333,8 +333,12 @@
 
     .splide__arrow {
       position: absolute;
-      top: calc(50% - 1.5rem);
+      top: calc(50% - 3rem);
       transform: translateY(-50%);
+
+      @media (min-width: 480px) {
+        top: calc(50% - 1.5rem);
+      }
       background: rgba(0, 0, 0, 0.4);
       border: none;
       border-radius: 50%;
@@ -372,7 +376,11 @@
 
     .splide__pagination {
       position: absolute !important;
-      bottom: 4.75rem !important;
+      bottom: 6.25rem !important;
+
+      @media (min-width: 480px) {
+        bottom: 4.75rem !important;
+      }
       left: 50% !important;
       right: auto !important;
       transform: translateX(-50%) !important;
