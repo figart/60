@@ -79,7 +79,7 @@ I don't know if I'll do this every year. I don't know if the war will still be g
 - $50 fills the tank once
 - $150 covers a border crossing fee
 - $500 handles a critical repair
-- $1,000 and you've bought a quarter of a car
+- $1,000 and you've bought a fourth of the vehicle
 
 Any amount matters. This isn't a charity with overhead and galas. It's a vehicle, a driver, and a destination.
 
