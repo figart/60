@@ -81,6 +81,7 @@
 
         var paragraphs = Array.from(content.querySelectorAll('p'));
         var carouselIndex = 0;
+        var figureIndex = 0;
 
         paragraphs.forEach(function(p) {
           var imgs = p.querySelectorAll('img');
@@ -89,7 +90,10 @@
           if (imgs.length === 1 || imgs.length === 2) {
             var container = document.createDocumentFragment();
             imgs.forEach(function(img) {
-              container.appendChild(createFigure(img, false));
+              var fig = createFigure(img, false);
+              fig.setAttribute('data-figure-index', figureIndex);
+              figureIndex++;
+              container.appendChild(fig);
             });
             p.parentNode.insertBefore(container, p);
             p.remove();
@@ -106,9 +110,12 @@
             var list = document.createElement('ul');
             list.className = 'splide__list';
 
+            var slideIndex = 0;
             imgs.forEach(function(img) {
               var slide = document.createElement('li');
               slide.className = 'splide__slide';
+              slide.setAttribute('data-slide-index', slideIndex);
+              slideIndex++;
               var figure = createFigure(img, true);
               // Mark video slides for styling
               if (figure.querySelector('iframe')) {
@@ -152,6 +159,8 @@
         var galleryItems = [];
         var currentIndex = 0;
         var currentSplide = null; // Reference to the carousel's Splide instance
+        var currentCarouselIndex = null; // Carousel index when in carousel mode
+        var currentFigureIndex = null; // Figure index when in single-image mode
 
         // Image cache for preloading
         var imageCache = {};
@@ -179,6 +188,49 @@
               preloadImage(item.src);
             }
           });
+        }
+
+        // URL hash utilities for deep linking
+        function updateUrlHash() {
+          var hash = '';
+          if (currentCarouselIndex !== null) {
+            hash = '#gallery-' + currentCarouselIndex + '-' + currentIndex;
+          } else if (currentFigureIndex !== null) {
+            hash = '#image-' + currentFigureIndex;
+          }
+          if (hash) {
+            history.replaceState(null, '', hash);
+          }
+        }
+
+        function clearUrlHash() {
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+
+        function parseUrlHash() {
+          var hash = window.location.hash;
+          if (!hash) return null;
+
+          // Match #gallery-{carouselIndex}-{slideIndex}
+          var galleryMatch = hash.match(/^#gallery-(\d+)-(\d+)$/);
+          if (galleryMatch) {
+            return {
+              type: 'gallery',
+              carouselIndex: parseInt(galleryMatch[1], 10),
+              slideIndex: parseInt(galleryMatch[2], 10)
+            };
+          }
+
+          // Match #image-{figureIndex}
+          var imageMatch = hash.match(/^#image-(\d+)$/);
+          if (imageMatch) {
+            return {
+              type: 'image',
+              figureIndex: parseInt(imageMatch[1], 10)
+            };
+          }
+
+          return null;
         }
 
         // Create lightbox overlay
@@ -391,12 +443,18 @@
           if (currentSplide) {
             currentSplide.go(index);
           }
+
+          // Update URL hash for deep linking
+          updateUrlHash();
         }
 
         // Close lightbox and clean up
         function closeLightbox() {
           overlay.classList.remove('active');
           hideCaption();
+          clearUrlHash();
+          currentCarouselIndex = null;
+          currentFigureIndex = null;
           // Wait for overlay fade-out transition before cleaning up
           setTimeout(function() {
             // Remove all images and iframes (but keep spinner)
@@ -432,6 +490,11 @@
             if (carousel) {
               // Store reference to Splide instance for syncing
               currentSplide = carousel.splide || null;
+              // Extract carousel index from id (e.g., "carousel-0" -> 0)
+              var carouselId = carousel.id;
+              var carouselMatch = carouselId.match(/^carousel-(\d+)$/);
+              currentCarouselIndex = carouselMatch ? parseInt(carouselMatch[1], 10) : null;
+              currentFigureIndex = null;
               // Collect all media from this carousel
               galleryItems = [];
               carousel.querySelectorAll('.splide__slide').forEach(function(slide) {
@@ -454,6 +517,8 @@
             } else {
               // Single image mode
               currentSplide = null;
+              currentCarouselIndex = null;
+              currentFigureIndex = parseInt(figure.getAttribute('data-figure-index'), 10);
               galleryItems = [{ type: 'image', src: img.src, alt: img.alt }];
               currentIndex = 0;
             }
@@ -486,6 +551,109 @@
             showItem(currentIndex);
           }
         });
+
+        // Open lightbox to a specific hash target
+        function openToHashTarget(target) {
+          // Disable on mobile
+          if (window.innerWidth < 480) return;
+
+          if (target.type === 'gallery') {
+            // Find the carousel element
+            var carousel = document.getElementById('carousel-' + target.carouselIndex);
+            if (!carousel) return;
+
+            var slides = carousel.querySelectorAll('.splide__slide');
+            if (slides.length === 0) return;
+
+            // Validate slide index, default to 0 if out of range
+            var slideIndex = target.slideIndex;
+            if (slideIndex < 0 || slideIndex >= slides.length) {
+              slideIndex = 0;
+            }
+
+            // Set up carousel state
+            currentSplide = carousel.splide || null;
+            currentCarouselIndex = target.carouselIndex;
+            currentFigureIndex = null;
+
+            // Build gallery items from carousel
+            galleryItems = [];
+            slides.forEach(function(slide) {
+              var slideImg = slide.querySelector('img');
+              var slideIframe = slide.querySelector('iframe');
+              var figcaption = slide.querySelector('figcaption');
+              var caption = figcaption ? figcaption.textContent : '';
+              if (slideIframe) {
+                galleryItems.push({ type: 'video', src: slideIframe.src, alt: caption });
+              } else if (slideImg && !slideImg.src.match(/#youtube:/)) {
+                galleryItems.push({ type: 'image', src: slideImg.src, alt: slideImg.alt || caption });
+              }
+            });
+
+            if (galleryItems.length === 0) return;
+
+            // Preload all gallery images
+            galleryItems.forEach(function(item) {
+              if (item.type === 'image') {
+                preloadImage(item.src);
+              }
+            });
+
+            currentIndex = Math.min(slideIndex, galleryItems.length - 1);
+            showItem(currentIndex);
+            overlay.classList.add('active');
+
+          } else if (target.type === 'image') {
+            // Find the figure with matching data-figure-index
+            var figure = content.querySelector('figure[data-figure-index="' + target.figureIndex + '"]');
+            if (!figure) return;
+
+            var img = figure.querySelector('img');
+            if (!img) return;
+
+            // Set up single image state
+            currentSplide = null;
+            currentCarouselIndex = null;
+            currentFigureIndex = target.figureIndex;
+            galleryItems = [{ type: 'image', src: img.src, alt: img.alt }];
+            currentIndex = 0;
+
+            preloadImage(img.src);
+            showItem(currentIndex);
+            overlay.classList.add('active');
+          }
+        }
+
+        // Handle browser back/forward navigation
+        window.addEventListener('hashchange', function() {
+          var target = parseUrlHash();
+          if (target) {
+            // If lightbox is already open, just navigate to new target
+            if (overlay.classList.contains('active')) {
+              // Close and reopen to ensure clean state
+              overlay.classList.remove('active');
+              setTimeout(function() {
+                openToHashTarget(target);
+              }, 50);
+            } else {
+              openToHashTarget(target);
+            }
+          } else {
+            // Hash cleared or invalid, close lightbox if open
+            if (overlay.classList.contains('active')) {
+              closeLightbox();
+            }
+          }
+        });
+
+        // Check for hash on page load
+        var initialTarget = parseUrlHash();
+        if (initialTarget) {
+          // Delay slightly to ensure DOM is fully ready
+          setTimeout(function() {
+            openToHashTarget(initialTarget);
+          }, 100);
+        }
       })();
     </script>
 
