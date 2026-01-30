@@ -15,6 +15,8 @@
 
     {%- include footer.html -%}
 
+    {%- include contact-modal.html -%}
+
     <script>
       // Theme toggle functionality
       (function() {
@@ -483,6 +485,108 @@
             currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
             showItem(currentIndex);
           }
+        });
+      })();
+    </script>
+
+    <script>
+      // Contact modal functionality
+      (function() {
+        var modal = document.getElementById('contact-modal');
+        var toggle = document.getElementById('contact-toggle');
+        var closeBtn = modal.querySelector('.contact-modal-close');
+        var form = document.getElementById('contact-form');
+        var successEl = document.getElementById('contact-success');
+        var errorEl = document.getElementById('contact-error');
+        var retryBtn = document.getElementById('contact-retry');
+
+        function openModal() {
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+
+        function resetForm() {
+          form.reset();
+          form.style.display = 'block';
+          successEl.style.display = 'none';
+          errorEl.style.display = 'none';
+        }
+
+        // Open modal on contact toggle click
+        if (toggle) {
+          toggle.addEventListener('click', openModal);
+        }
+
+        // Open modal on .contact-link click
+        document.addEventListener('click', function(e) {
+          if (e.target.closest('.contact-link')) {
+            e.preventDefault();
+            openModal();
+          }
+        });
+
+        // Close modal handlers
+        closeBtn.addEventListener('click', function() {
+          closeModal();
+          setTimeout(resetForm, 300);
+        });
+
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            closeModal();
+            setTimeout(resetForm, 300);
+          }
+        });
+
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+            setTimeout(resetForm, 300);
+          }
+        });
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var formData = new FormData(form);
+          var submitBtn = form.querySelector('.contact-submit');
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+          })
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(data) {
+            if (data.success) {
+              form.style.display = 'none';
+              successEl.style.display = 'block';
+            } else {
+              form.style.display = 'none';
+              errorEl.style.display = 'block';
+            }
+          })
+          .catch(function() {
+            form.style.display = 'none';
+            errorEl.style.display = 'block';
+          })
+          .finally(function() {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+          });
+        });
+
+        // Retry button
+        retryBtn.addEventListener('click', function() {
+          resetForm();
         });
       })();
     </script>
