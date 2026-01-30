@@ -5,6 +5,8 @@ permalink: /about/
 nav_title: About
 ---
 
+![](/assets/images/hiking-on-the-guadalupe-river.optimize.png)
+
 ## The Short Version
 
 I'm the founder and principal of [Digett](https://www.digett.com), a digital marketing agency I started in 2001. We help organizations build marketing systems that attract advocates, build loyalty and create lasting value. I live in the Texas Hill Country with my wife Claudia and more dogs than I'd originally planned on.
