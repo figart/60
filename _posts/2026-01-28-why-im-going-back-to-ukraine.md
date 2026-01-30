@@ -39,7 +39,7 @@ Not that I was dodging missiles. We may have heard a drone or two, and we clearl
 
 Back home, I'm not sure many of us realize we're also in a fight, or what we're defending if we do realize it. When I read the news—an activity on which I've had to cut back for my own mental health—I feel something between grief and nausea. I don't lecture on politics, as people believe what they believe, and I have no business pretending I'm wiser or better than my neighbor. But let's just say the divide between what we _say_ we value and how we treat each other feels wider than it used to. For me, being in Ukraine, surrounded by people who've had everything upended and yet who are still building, still helping, even still laughing—it made me feel less alone in my discomfort regarding my own homeland.
 
-## Can you help me?
+## Will you help me?
 
 In five weeks, I'll fly to London, meet up with the convoy, and do it all again. This time I'm raising $5,000 to help cover the cost of one vehicle—its purchase, repairs, and paperwork. I'll drive it east across Europe, straight into Ukraine, and hand the keys to someone who needs it.
 
