@@ -122,7 +122,7 @@
             p.parentNode.insertBefore(splide, p);
             p.remove();
 
-            new Splide('#carousel-' + carouselIndex, {
+            var splideInstance = new Splide('#carousel-' + carouselIndex, {
               type: 'slide',
               perPage: 1,
               gap: '1rem',
@@ -130,6 +130,8 @@
               pagination: true,
               rewind: true
             }).mount();
+            // Store instance on element for lightbox syncing
+            splide.splide = splideInstance;
 
             carouselIndex++;
           }
@@ -147,6 +149,7 @@
         // Each item: { type: 'image'|'video', src: string }
         var galleryItems = [];
         var currentIndex = 0;
+        var currentSplide = null; // Reference to the carousel's Splide instance
 
         // Image cache for preloading
         var imageCache = {};
@@ -212,15 +215,49 @@
         closeBtn.setAttribute('aria-label', 'Close lightbox');
         overlay.appendChild(closeBtn);
 
+        // Create navigation arrows
+        var prevBtn = document.createElement('button');
+        prevBtn.className = 'lightbox-arrow lightbox-arrow--prev';
+        prevBtn.innerHTML = '&#10094;';
+        prevBtn.setAttribute('aria-label', 'Previous image');
+        overlay.appendChild(prevBtn);
+
+        var nextBtn = document.createElement('button');
+        nextBtn.className = 'lightbox-arrow lightbox-arrow--next';
+        nextBtn.innerHTML = '&#10095;';
+        nextBtn.setAttribute('aria-label', 'Next image');
+        overlay.appendChild(nextBtn);
+
         document.body.appendChild(overlay);
 
-        // Update counter display
+        // Arrow click handlers
+        prevBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          if (galleryItems.length > 1) {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            showItem(currentIndex);
+          }
+        });
+
+        nextBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          if (galleryItems.length > 1) {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            showItem(currentIndex);
+          }
+        });
+
+        // Update counter and arrows display
         function updateCounter() {
           if (galleryItems.length > 1) {
             counter.textContent = (currentIndex + 1) + ' / ' + galleryItems.length;
             counter.style.display = 'block';
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
           } else {
             counter.style.display = 'none';
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
           }
         }
 
@@ -347,6 +384,11 @@
 
           updateCounter();
           preloadAdjacent(index);
+
+          // Sync carousel with lightbox position
+          if (currentSplide) {
+            currentSplide.go(index);
+          }
         }
 
         // Close lightbox and clean up
@@ -370,6 +412,9 @@
 
         // Open lightbox when clicking on images or video wrappers
         content.addEventListener('click', function(e) {
+          // Disable lightbox on mobile screens
+          if (window.innerWidth < 480) return;
+
           var figure = e.target.closest('figure');
           if (!figure) return;
 
@@ -383,6 +428,8 @@
             // Check if inside a carousel
             var carousel = figure.closest('.splide');
             if (carousel) {
+              // Store reference to Splide instance for syncing
+              currentSplide = carousel.splide || null;
               // Collect all media from this carousel
               galleryItems = [];
               carousel.querySelectorAll('.splide__slide').forEach(function(slide) {
@@ -404,6 +451,7 @@
               if (currentIndex === -1) currentIndex = 0;
             } else {
               // Single image mode
+              currentSplide = null;
               galleryItems = [{ type: 'image', src: img.src, alt: img.alt }];
               currentIndex = 0;
             }
