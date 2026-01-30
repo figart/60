@@ -57,7 +57,7 @@ I don't know if I'll do this every year. I don't know if the war will still be g
 ![It wasn't all work. One day we got to play by taking a ride in a vintage Russian Mil Mi-8 helicopter.](#youtube:LWzQPU2zOlg)
 ![Some of the crew hanging out in Lviv.](/assets/images/ukraine/some-of-the-crew-in-lviv.webp)
 ![The ambulance with which I became good friends.](/assets/images/ukraine/the-ambulance.webp)
-![Lviv soldier mural. Murals of this nature are found throughout Ukraine.](/assets/images/ukraine/lviv-soldier-mural.webp)
+![Lviv soldier mural. Murals of this nature are found throughout Ukraine. This one says "I will wait. I will wait both day and night. I will wait forever, for the sake of your return.](/assets/images/ukraine/lviv-soldier-mural.webp)
 ![Lviv cemetery. The cemetaries in most towns are easily spotted becaue of these flags. In larger cities like Lviv there are rows and rows of them.](/assets/images/ukraine/lviv-cemetary.webp)
 ![At city hall in Lviv. There's sadness in knowing so much architecture across Ukraine—similar in its grandeur and importance—is being destroyed.](/assets/images/ukraine/at-city-hall-in-lviv.webp)
 ![Funeral procession, Lviv. These funerals can occur once or twice a day at the same church. This one involved three fallen soldiers and their families, along with a large crowd of townspeople. A more solemn occasion I've never witnessed.](/assets/images/ukraine/funeral-procession-lviv.webp)
