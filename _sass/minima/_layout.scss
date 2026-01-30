@@ -477,9 +477,8 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
-  margin-left: 0;
-  margin-right: 0;
+  padding: 0.25rem;
+  margin: 0;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -695,7 +694,7 @@
 .lightbox-caption {
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  color: #c5bdb5;
   padding: 10px 15px;
   font-size: 1.1rem;
   font-style: italic;
@@ -774,9 +773,8 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1.25rem;
+  padding: 0.25rem;
+  margin: 0 0.375rem;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
