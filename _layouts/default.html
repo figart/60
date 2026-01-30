@@ -494,6 +494,8 @@
       (function() {
         var modal = document.getElementById('contact-modal');
         var toggle = document.getElementById('contact-toggle');
+        if (!modal || !toggle) return;
+
         var closeBtn = modal.querySelector('.contact-modal-close');
         var form = document.getElementById('contact-form');
         var successEl = document.getElementById('contact-success');
