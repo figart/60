@@ -689,7 +689,7 @@
           document.body.style.overflow = '';
         }
 
-        // Focus trap
+        // Focus trap - handle Tab key
         function handleFocusTrap(e) {
           if (!modal.classList.contains('active')) return;
           if (e.key !== 'Tab') return;
@@ -715,7 +715,23 @@
           }
         }
 
+        // Focus trap - catch focus leaving modal
+        function handleFocusEscape(e) {
+          if (!modal.classList.contains('active')) return;
+
+          var modalContainer = document.querySelector('.contact-modal');
+          if (!modalContainer.contains(e.target)) {
+            e.preventDefault();
+            e.stopPropagation();
+            // Return focus to the first input
+            if (nameInput) {
+              nameInput.focus();
+            }
+          }
+        }
+
         document.addEventListener('keydown', handleFocusTrap);
+        document.addEventListener('focusin', handleFocusEscape, true);
 
         function resetForm() {
           form.reset();
