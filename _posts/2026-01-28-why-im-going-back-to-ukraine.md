@@ -10,10 +10,7 @@ Folkestone is a coastal town where, eighty years earlier, tens of thousands of s
 
 My 60th birthday arrived at midnight just after crossing the Channel, and my comrades helped celebrate the occasion by singing happy birthday to me at an Esso roadside fuel station just up the coast from Dunkirk. Sixty years old, standing under fluorescent lights, surrounded by a cool bunch of Brits. I'd imagined something different—a nice dinner, maybe, or at least a cake that wasn't from a petrol station—but honestly, it was perfect. After that the days blurred, driving twelve hours at a stretch trying to keep up with a British crew who have done this run literally dozens of times, the way some people commute to an office.
 
-<figure>
-  <img src="/assets/images/ukraine/highway-north-of-dunkirk.webp" alt="Highway north of Dunkirk">
-  <figcaption>This is the Esso station where I celebrated my 60th birthday almost a year ago, though when I was there (this image is from Google Maps) it was after midnight, and, of course, dark.</figcaption>
-</figure>
+![This is the Esso station where I celebrated my 60th birthday almost a year ago, though when I was there (this image is from Google Maps) it was after midnight, and, of course, dark.](/assets/images/ukraine/highway-north-of-dunkirk.webp)
 
 That was last March. I'd come across this opportunity thanks to a fellow Rotarian who invited me to go with him. It's largely a Rotarian effort, with volunteers from various Rotary Clubs throughout the UK, though as with most successful efforts of any size there are a couple of linchpins that organize it, that _move_ the people, that make it all work. In the end, though, collectively, it's ordinary people buying used vehicles, patching them up, filling them with supplies, and driving them straight into Ukraine. No bureaucracy. No shipping containers. Just keys in hand, delivered to people who need them. On my first trip, the vehicles were generally being used for rescue of the wounded and evacuation of displaced civilians. There are still a lot of rescues happening, but more and more of these vehicles are being used to sustain the war mission, to help defend Ukraine from the Russians.
 
@@ -54,7 +51,7 @@ I don't know if I'll do this every year. I don't know if the war will still be g
 ![Waiting for the ferry at Dover.](/assets/images/ukraine/waiting-for-the-ferry.webp)
 ![In addition to cars, JC and I brought with us a Ukraine-American friendship flag signed by many of the members of our Rotary Club in San Antonio](/assets/images/ukraine/ukraine-american-flag.webp)
 ![On this particular mission, at some point my American buddy, JC, affectionately coined the term "Preston's Eleven" referring to the drivers. That's Preston in the middle, undisputably in charge of his crew.](/assets/images/ukraine/prestons-eleven.webp)
-![It wasn't all work. One day we got to play by taking a ride in a vintage Russian Mil Mi-8 helicopter.](youtube:LWzQPU2zOlg)
+![It wasn't all work. One day we got to play by taking a ride in a vintage Russian Mil Mi-8 helicopter.](#youtube:LWzQPU2zOlg)
 ![Some of the crew hanging out in Lviv.](/assets/images/ukraine/some-of-the-crew-in-lviv.webp)
 ![The ambulance I became very familiar with.](/assets/images/ukraine/the-ambulance.webp)
 ![Lviv soldier mural. Murals of this nature are not uncommon throughout Ukraine.](/assets/images/ukraine/lviv-soldier-mural.webp)

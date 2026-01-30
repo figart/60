@@ -38,10 +38,10 @@
         if (!content) return;
 
         // Helper: create media element (img or YouTube iframe)
-        // Syntax: ![caption](youtube:VIDEO_ID)
+        // Syntax: ![caption](#youtube:VIDEO_ID)
         function createMediaElement(img) {
           var src = (img.getAttribute('src') || '').trim();
-          var youtubeMatch = src.match(/^youtube:([a-zA-Z0-9_-]+)/);
+          var youtubeMatch = src.match(/^#youtube:([a-zA-Z0-9_-]+)/);
 
           if (youtubeMatch) {
             var iframe = document.createElement('iframe');
@@ -148,19 +148,69 @@
         var galleryItems = [];
         var currentIndex = 0;
 
+        // Image cache for preloading
+        var imageCache = {};
+
+        function preloadImage(src) {
+          // Only preload valid http(s) URLs
+          if (!src || !src.match(/^https?:\/\//)) return null;
+          if (imageCache[src]) return imageCache[src];
+          var img = new Image();
+          img.src = src;
+          imageCache[src] = img;
+          return img;
+        }
+
+        function preloadAdjacent(index) {
+          // Preload prev, current, next images
+          var indices = [
+            index,
+            (index + 1) % galleryItems.length,
+            (index - 1 + galleryItems.length) % galleryItems.length
+          ];
+          indices.forEach(function(i) {
+            var item = galleryItems[i];
+            if (item && item.type === 'image') {
+              preloadImage(item.src);
+            }
+          });
+        }
+
         // Create lightbox overlay
         var overlay = document.createElement('div');
         overlay.className = 'lightbox-overlay';
 
+        // Create content wrapper for positioning media and caption together
+        var contentWrapper = document.createElement('div');
+        contentWrapper.className = 'lightbox-content';
+        overlay.appendChild(contentWrapper);
+
         // Create container for media (img or iframe)
         var mediaContainer = document.createElement('div');
         mediaContainer.className = 'lightbox-media';
-        overlay.appendChild(mediaContainer);
+        contentWrapper.appendChild(mediaContainer);
+
+        // Create spinner element
+        var spinner = document.createElement('div');
+        spinner.className = 'lightbox-spinner';
+        mediaContainer.appendChild(spinner);
+
+        // Create caption element (positioned at bottom of content wrapper)
+        var captionEl = document.createElement('div');
+        captionEl.className = 'lightbox-caption';
+        contentWrapper.appendChild(captionEl);
 
         // Create counter element
         var counter = document.createElement('span');
         counter.className = 'lightbox-counter';
         overlay.appendChild(counter);
+
+        // Create close button
+        var closeBtn = document.createElement('button');
+        closeBtn.className = 'lightbox-close';
+        closeBtn.innerHTML = '&times;';
+        closeBtn.setAttribute('aria-label', 'Close lightbox');
+        overlay.appendChild(closeBtn);
 
         document.body.appendChild(overlay);
 
@@ -174,35 +224,148 @@
           }
         }
 
+        // Show/hide caption with fade, positioned at bottom of media element
+        function showCaption(text, mediaElement) {
+          if (text && mediaElement) {
+            captionEl.textContent = text;
+
+            // Poll until media element has valid dimensions
+            var attempts = 0;
+            var maxAttempts = 20;
+
+            function positionCaption() {
+              var mediaRect = mediaElement.getBoundingClientRect();
+
+              // Check if we have valid dimensions (width > 100px to avoid partial renders)
+              if (mediaRect.width > 100 && mediaRect.height > 100) {
+                var containerRect = contentWrapper.getBoundingClientRect();
+                var bottomOffset = containerRect.bottom - mediaRect.bottom;
+                captionEl.style.bottom = bottomOffset + 'px';
+                captionEl.style.left = (mediaRect.left - containerRect.left) + 'px';
+                captionEl.style.width = mediaRect.width + 'px';
+                captionEl.style.display = 'block';
+
+                // Delay before fade-in to let image settle and ensure smooth transition
+                setTimeout(function() {
+                  captionEl.classList.add('visible');
+                }, 100);
+              } else if (attempts < maxAttempts) {
+                attempts++;
+                setTimeout(positionCaption, 50);
+              }
+            }
+
+            // Start positioning after a short delay
+            setTimeout(positionCaption, 200);
+          } else {
+            captionEl.classList.remove('visible');
+            captionEl.style.display = 'none';
+          }
+        }
+
+        function hideCaption() {
+          captionEl.classList.remove('visible');
+          captionEl.style.display = 'none';
+        }
+
         // Show current item in lightbox
         function showItem(index) {
           var item = galleryItems[index];
-          mediaContainer.innerHTML = '';
+
+          // Remove any existing iframes immediately (no crossfade for videos)
+          var existingIframes = mediaContainer.querySelectorAll('iframe');
+          existingIframes.forEach(function(iframe) { iframe.remove(); });
+
+          // Mark existing images as outgoing (fade out, but keep scale)
+          var existingImgs = mediaContainer.querySelectorAll('img:not(.outgoing)');
+          existingImgs.forEach(function(img) {
+            img.classList.add('outgoing');
+          });
+
+          // Hide caption during transition
+          hideCaption();
 
           if (item.type === 'image') {
+            // Show spinner
+            spinner.classList.add('visible');
+
             var img = document.createElement('img');
-            img.src = item.src;
             img.alt = item.alt || '';
-            mediaContainer.appendChild(img);
+
+            // Check if image is already cached and loaded
+            var cached = imageCache[item.src];
+            if (cached && cached.complete && cached.naturalWidth > 0) {
+              img.src = item.src;
+              mediaContainer.appendChild(img);
+              // Use requestAnimationFrame to ensure the element is in DOM before adding loaded class
+              requestAnimationFrame(function() {
+                requestAnimationFrame(function() {
+                  spinner.classList.remove('visible');
+                  img.classList.add('loaded');
+                  showCaption(item.alt, img);
+                  // Remove outgoing images after transition
+                  setTimeout(function() {
+                    var outgoing = mediaContainer.querySelectorAll('.outgoing');
+                    outgoing.forEach(function(el) { el.remove(); });
+                  }, 500);
+                });
+              });
+            } else {
+              img.onload = function() {
+                spinner.classList.remove('visible');
+                img.classList.add('loaded');
+                showCaption(item.alt, img);
+                // Remove outgoing images after transition
+                setTimeout(function() {
+                  var outgoing = mediaContainer.querySelectorAll('.outgoing');
+                  outgoing.forEach(function(el) { el.remove(); });
+                }, 500);
+              };
+              img.onerror = function() {
+                spinner.classList.remove('visible');
+                // Still show image (broken state) and caption
+                img.classList.add('loaded');
+                showCaption(item.alt, img);
+              };
+              img.src = item.src;
+              mediaContainer.appendChild(img);
+            }
           } else if (item.type === 'video') {
+            // Remove all existing images for video
+            var allImgs = mediaContainer.querySelectorAll('img');
+            allImgs.forEach(function(el) { el.remove(); });
+            spinner.classList.remove('visible');
+
             var iframe = document.createElement('iframe');
             iframe.src = item.src;
             iframe.setAttribute('frameborder', '0');
             iframe.setAttribute('allowfullscreen', '');
             iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
             mediaContainer.appendChild(iframe);
+            showCaption(item.alt, iframe);
           }
 
           updateCounter();
+          preloadAdjacent(index);
+        }
+
+        // Close lightbox and clean up
+        function closeLightbox() {
+          overlay.classList.remove('active');
+          hideCaption();
+          // Wait for overlay fade-out transition before cleaning up
+          setTimeout(function() {
+            // Remove all images and iframes (but keep spinner)
+            var media = mediaContainer.querySelectorAll('img, iframe');
+            media.forEach(function(el) { el.remove(); });
+            spinner.classList.remove('visible');
+          }, 300);
         }
 
         // Close lightbox on overlay click (but not on media click)
+        // Close lightbox on any click
         overlay.addEventListener('click', function(e) {
-          if (e.target === overlay) {
-            overlay.classList.remove('active');
-            // Stop any playing video
-            mediaContainer.innerHTML = '';
-          }
+          closeLightbox();
         });
 
         // Open lightbox when clicking on images or video wrappers
@@ -225,10 +388,13 @@
               carousel.querySelectorAll('.splide__slide').forEach(function(slide) {
                 var slideImg = slide.querySelector('img');
                 var slideIframe = slide.querySelector('iframe');
-                if (slideImg) {
-                  galleryItems.push({ type: 'image', src: slideImg.src, alt: slideImg.alt });
-                } else if (slideIframe) {
-                  galleryItems.push({ type: 'video', src: slideIframe.src });
+                var figcaption = slide.querySelector('figcaption');
+                var caption = figcaption ? figcaption.textContent : '';
+                // Check for iframe first, or if img has #youtube: src treat as video
+                if (slideIframe) {
+                  galleryItems.push({ type: 'video', src: slideIframe.src, alt: caption });
+                } else if (slideImg && !slideImg.src.match(/#youtube:/)) {
+                  galleryItems.push({ type: 'image', src: slideImg.src, alt: slideImg.alt || caption });
                 }
               });
               // Find index of clicked image
@@ -242,6 +408,13 @@
               currentIndex = 0;
             }
 
+            // Preload all gallery images when lightbox opens
+            galleryItems.forEach(function(item) {
+              if (item.type === 'image') {
+                preloadImage(item.src);
+              }
+            });
+
             showItem(currentIndex);
             overlay.classList.add('active');
           }
@@ -252,8 +425,7 @@
           if (!overlay.classList.contains('active')) return;
 
           if (e.key === 'Escape') {
-            overlay.classList.remove('active');
-            mediaContainer.innerHTML = '';
+            closeLightbox();
           }
           if (e.key === 'ArrowRight' && galleryItems.length > 1) {
             currentIndex = (currentIndex + 1) % galleryItems.length;
