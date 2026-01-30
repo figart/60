@@ -528,7 +528,8 @@
 
 @include media-query($on-palm) {
   .theme-toggle {
-    position: static;
+    position: relative;
+    top: 0.25rem;
     margin: 0;
     padding: 0.25rem;
     display: flex;
@@ -772,8 +773,8 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  margin-left: 1.25rem;
-  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1.25rem;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
