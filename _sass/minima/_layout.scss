@@ -651,9 +651,7 @@
 
 .post-content figure img,
 .post-content .gallery-carousel img {
-  @media (min-width: 480px) {
-    cursor: zoom-in;
-  }
+  cursor: zoom-in;
 }
 
 .lightbox-counter {
@@ -673,13 +671,13 @@
   position: fixed;
   top: 20px;
   left: 20px;
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   background: rgba(255, 255, 255, 0.7);
   color: #222;
   border: none;
   border-radius: 50%;
-  font-size: 26px;
+  font-size: 28px;
   line-height: 1;
   cursor: pointer;
   z-index: 1001;

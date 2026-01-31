@@ -476,9 +476,6 @@
 
         // Open lightbox when clicking on images or video wrappers
         content.addEventListener('click', function(e) {
-          // Disable lightbox on mobile screens
-          if (window.innerWidth < 480) return;
-
           var figure = e.target.closest('figure');
           if (!figure) return;
 
@@ -556,11 +553,29 @@
           }
         });
 
+        // Touch swipe navigation for mobile
+        var touchStartX = 0;
+        var touchEndX = 0;
+        var swipeThreshold = 50;
+
+        overlay.addEventListener('touchstart', function(e) {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        overlay.addEventListener('touchend', function(e) {
+          touchEndX = e.changedTouches[0].screenX;
+          var diff = touchStartX - touchEndX;
+          if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+              showItem((currentIndex + 1) % galleryItems.length); // swipe left = next
+            } else {
+              showItem((currentIndex - 1 + galleryItems.length) % galleryItems.length); // swipe right = prev
+            }
+          }
+        });
+
         // Open lightbox to a specific hash target
         function openToHashTarget(target) {
-          // Disable on mobile
-          if (window.innerWidth < 480) return;
-
           if (target.type === 'gallery') {
             // Find the carousel element
             var carousel = document.getElementById('carousel-' + target.carouselIndex);
