@@ -5,7 +5,7 @@ permalink: /about/
 nav_title: About
 ---
 
-![](/assets/images/hiking-on-the-guadalupe-river.optimize.png)
+![](/assets/images/hiking-on-the-guadalupe-river.webp)
 
 ## The Short Version
 
