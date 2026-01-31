@@ -76,6 +76,10 @@ jobs:
               find _posts -type f \( -name "*.md" -o -name "*.markdown" \) -exec \
                 sed -i "s|$old_ref|$new_ref|g" {} \;
 
+              # Update _pages/*.md and _pages/*.markdown
+              find _pages -type f \( -name "*.md" -o -name "*.markdown" \) -exec \
+                sed -i "s|$old_ref|$new_ref|g" {} \; 2>/dev/null || true
+
               # Update root markdown files
               for mdfile in *.markdown; do
                 if [[ -f "$mdfile" ]]; then
