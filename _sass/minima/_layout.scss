@@ -103,15 +103,16 @@
     justify-content: flex-end;
 
     label[for="nav-trigger"] {
-      display: block;
+      display: block !important;
       width: 2.25rem;
       height: 2.25rem;
-      z-index: 2;
+      z-index: 102;
       cursor: pointer;
+      position: relative;
     }
 
     .menu-icon {
-      display: flex;
+      display: flex !important;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -122,7 +123,7 @@
     }
 
     .menu-line {
-      display: block;
+      display: block !important;
       width: 18px;
       height: 2px;
       background-color: var(--text-color);
@@ -142,8 +143,8 @@
       transform: translateY(-6px) rotate(-45deg);
     }
 
-    input ~ .trigger {
-      display: none;
+    .trigger {
+      display: none !important;
       width: 100%;
       margin-top: 0.5rem;
       padding: 0.5rem 0;
@@ -153,7 +154,7 @@
     }
 
     input:checked ~ .trigger {
-      display: block;
+      display: block !important;
     }
 
     .page-link {
