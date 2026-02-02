@@ -4,31 +4,29 @@ title: "A Case for the Humble Screened-In Porch"
 date: 2024-02-13
 ---
 
-When I bought my house, the porch was rotting. The floor sagged, and the "cover", (I can't really call it a roof) was giving up. It was one of those features that showed up in the listing photos from an angle that tried to hide the decay. I didn't think much about it at the time, as I had bigger problems to solve at the time.
+When I bought my house, the porch was rotting. The floor sagged, and the "cover" (I couldn't call it a roof) was giving up. It was one of those features that showed up in the listing photos from an angle that tried to hide the decay. I didn't think much about it, as I had bigger problems to solve at the time.
 
-But somewhere in those early months of renovation, I started to notice something. I'd step outside with my coffee, stand there for a minute, and then retreat. Too hot. Too buggy. Too much wind kicking up dust from the gravel drive. The land was beautiful—two and a half wooded acres in the Texas Hill Country—but I couldn't actually _be_ in it. Not comfortably. Not for any length of time.
+But somewhere in those early months of renovation, I started to notice something. I'd step outside with my coffee, stand there for a minute, and then retreat. Too hot. Too buggy. Too much wind kicking up dust from the gravel drive. The land was beautiful—two and a half wooded acres on the southern edge of Texas Hill Country—but I couldn't actually _be_ in it. Not comfortably, or at least not for any length of time.
 
 ![Demolition of the old porch floor in progress](/assets/images/screened-in-porch/old-porch-demolition.webp)
 
 So I had the porch rebuilt. New floor. Sheet metal across the top. Framed it out for screens, though I wasn't sure yet how serious I was about that part.
 
-The screened-in porch I ended up with is not large. Eight feet deep, twenty-four feet wide. Enough room for two oversized leather chairs, a grill, and a couple of auxiliary burners that function as an outdoor kitchen. That's it. No dining table. No elaborate outdoor living setup. Just a narrow threshold between the house and the trees, but "Wow!", it changed everything.
+The porch I ended up with is not large. Eight feet deep, twenty-four feet wide. Enough room for two oversized leather chairs, a grill, and a couple of auxiliary burners that function as an outdoor kitchen. That's it. No dining table. No elaborate outdoor living setup. Just a narrow threshold between the house and the trees, but "Wow!", it changed everything.
 
 ![The new porch taking shape](/assets/images/screened-in-porch/new-porch-taking-shape.webp)
 
-The porch is finished in natural cedar, which does something subtle but important: it extends the feeling of the woods _into_ the space. You're not sitting in a room that looks out at nature. You're sitting _in_ nature, just with a screen between you and the mosquitoes. Shrubs grow right up against the front edge. The trees beyond them filter the light. On a good morning, with the coffee hot and the dogs sprawled at my feet, I'm not observing the land. I'm _in_ it.
+The porch is finished in natural cedar, which does something subtle but important: It extends the feeling of the forest _into_ the space. You're not sitting in a room that looks out at nature. You're sitting _in_ nature, just with a screen between you and the mosquitoes. Shrubs grow right up against the front edge. The trees beyond them filter the light. On a good morning, with the coffee hot and the dogs sprawled at my feet, I'm not observing the land. I'm _part of_ it.
 
-This is the thing about a screened-in porch that's hard to explain until you have one: it solves an ancient human problem. We want to be outside. We evolved outside. But outside has bugs and heat and wind and rain and all the reasons we built walls in the first place. The porch lets you cheat. You get the birdsong without the mosquitoes. The breeze without the dust. The thunderstorm without the soaking.
-
----
+This is the thing about a screened-in porch that's hard to explain until you have one. It solves an ancient human problem. We want to be outside. We evolved outside. But outside has bugs and heat and wind and rain and all the reasons we built walls and roofs in the first place. The porch lets you cheat. You get the birdsong without the mosquitoes. The breeze without the dust. The thunderstorm without getting wet.
 
 I live in a temperate climate, which means almost every month of the year offers at least some window to sit outside comfortably. But "comfortably" is doing a lot of work in that sentence. Without the screens, summer evenings are a negotiation with insects. Without the roof, spring means dodging showers. Without the partial shelter from wind, even a mild day can feel like an assault.
 
 The porch removes the negotiation. It says: _You can be here. Stay as long as you want._
 
-And so we do.
+We usually do just that.
 
-My wife Claudia spends as much time on the porch as I do—maybe more. Morning coffee, most days. Evening drinks when the light gets soft. The grill gets used several times a week, and the staging area for the dogs—on their way in, on their way out—has become so natural that I can't imagine the house without it. The porch isn't precious. It's lived in. The leather chairs have dog hair on them. The grill has grease stains. This is not a showroom. It's a room.
+My wife Claudia spends as much time on the porch as I do—maybe more. Morning coffee, most days. Evening drinks when the light gets soft. In the more pleasant time mes of the year y he grill might get used a couple times a week, and the staging area for the dogs—on their way in, on their way out—has become so natural that I can't imagine the house without it. The porch isn't precious. It's lived in. The leather chairs show the abuse they take from the sun. The grill has grease stains. This is not a showroom. It's just a room.
 
 And it's where we've made so many of our memories. Not dramatic ones—no proposals or milestone announcements. Just the accumulating kind. Conversations that went longer than expected. Storms watched from the dry side of the screen. Dinners that started on the grill and never made it to the dining room. The porch has become the place where our life together actually _happens_, more than any room inside the house. I didn't anticipate that when I framed it out for screens. But it's the thing I'm most grateful for.
 
