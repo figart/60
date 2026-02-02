@@ -24,7 +24,7 @@ I live in a temperate climate, which means almost every month of the year offers
 
 The porch removes the negotiation. It says: _You can be here. Stay as long as you want._
 
-We usually do just that.
+Usually that's what we do.
 
 My wife Claudia spends as much time on the porch as I do—maybe more. Morning coffee, most days. Evening drinks when the light gets soft. In the more pleasant time mes of the year y he grill might get used a couple times a week, and the staging area for the dogs—on their way in, on their way out—has become so natural that I can't imagine the house without it. The porch isn't precious. It's lived in. The leather chairs show the abuse they take from the sun. The grill has grease stains. This is not a showroom. It's just a room, outside.
 
