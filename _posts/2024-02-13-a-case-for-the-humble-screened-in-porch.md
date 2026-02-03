@@ -28,6 +28,8 @@ Usually that's what we do.
 
 My wife Claudia spends as much time on the porch as I do—maybe more. Morning coffee, most days. Evening drinks when the light gets soft. In the more pleasant time mes of the year y he grill might get used a couple times a week, and the staging area for the dogs—on their way in, on their way out—has become so natural that I can't imagine the house without it. The porch isn't precious. It's lived in. The leather chairs show the abuse they take from the sun. The grill has grease stains. This is not a showroom. It's just a room, outside.
 
+![Family on the porch](/assets/images/screened-in-porch/extended-family-on the porch.webp)
+
 It's where we've made so many memories. Not dramatic ones—no proposals or milestone announcements. Just the accumulating kind. Conversations that went longer than expected. Storms watched from the dry side of the screen. Dinners that started on the grill and never made it to the dining room. The porch has become the place where our life together actually _happens_, more than any room inside the house. I didn't anticipate that when I framed it out for screens. But it's the thing I'm most grateful for.
 
 ## Engawa
@@ -38,6 +40,8 @@ I think we've lost this in modern American architecture. Houses are either _insi
 
 A screened-in porch is a recovery of that in-between. It's architecturally almost nothing—a roof, some screens, a floor—but experientially it's everything. It's where I do my best thinking. It's where the dogs prefer to nap. It's where Claudia and I have had some of our best conversations, because something about being half-outside loosens people up.
 
+![Morning ritual](/assets/images/screened-in-porch/hazel-and-claudia-morning-ritual.webp)
+
 Here's something I didn't anticipate: the porch changed the _inside_ of the house, too. Our main living area looks out over the porch and onto the yard beyond. Our two recliners sit facing outward, looking out through an over-sized sliding glass door, toward those big screened openings. On the days when it's too cold or too wet to sit outside, we still sit where we can watch the trees and the birds and whatever weather is moving through—framed by the porch, softened by it. We keep a string of lights across the porch for gentle illumination at night, so even after dark we're looking _out_, not at a reflection of ourselves in a window. The porch didn't just add a room. It reoriented the whole house toward the land.
 
 Here's the practical case, if you need one: A screened-in porch costs a fraction of a kitchen remodel or a bathroom addition. Mine was built onto an existing structure that was already falling apart—so the incremental cost of doing it _right_ wasn't much more than the cost of doing it at all. For that modest investment, I added a room we use almost every day, in a way we use almost no other room.
@@ -46,13 +50,19 @@ And here's the thing I wish more people understood: _You might already have a po
 
 I see them all the time—open porches, covered patios, back decks with roofs—sitting empty because they're not comfortable. Too hot. Too buggy. Too exposed. The furniture fades in the sun and nobody sits in it. These spaces could be transformed. Most existing porches can be retrofitted with screens in some fashion, and the cost is often surprisingly modest. What you get back is not just a porch, but an _inhabitable_ space. A place you'll actually use instead of walking through on your way into the air conditioning.
 
+![Who knew the porch could be so enjoyable even when we aren't actually out on it?](/assets/images/screened-in-porch/looking-onto-porch-at-night.webp)
+
 The ROI is absurd. Not in resale value—though it probably helps—but in _lived_ value, on those mornings that start a little slower, During the evenings that extend a little later. In the simple, repeatable pleasure of sitting in a leather chair, surrounded by cedar and trees and dogs, feeling like you're outside under the fan even when the heat index says you shouldn't be.
 
 I never want to live without a screened-in porch again.
 
-I've moved a few times. I've compromised on features, because most of us have to on some level. But this one has become non-negotiable—not because it's luxurious, but because it's _essential_. It's the difference between owning land and actually _living_ on it, between having a beautiful view and being _a parcipant_ in the scene. Between a house where life happens inside and a home where life spills out onto the threshold and hangs out there.
+I've moved a few times. I've compromised on features, because most of us have to on some level. But this one has become non-negotiable—not because it's luxurious, but because it's _essential_. It's the difference between owning land and actually _living_ on it, between having a beautiful view and being _a parcipant_ in the scene. Or, in simple terms, it just lets a guy be outside more, which is where I prefer to be, especially if I can be comfortable.
 
 If you've got the space—or an unused porch waiting to be rescued—consider the screens. It doesn't have to be big. Eight by twenty-four works fine. What it has to be is _there_—a threshold, a shelter, a place where you can sit with your coffee and your spouse and your dogs and the trees and the bugs-that-can't-reach-you, and feel, for a few minutes at least, like you're exactly where you're supposed to be.
 
-
-_[Photo: The porch, evening light, two chairs, the view through the screens]_
+![Waiting for Mom to let us out](/assets/images/screened-in-porch/girls-waiting-to-go-out.webp)
+![The porch can be a great place to work.](/assets/images/screened-in-porch/great-place-to-work.webp)
+![A cup of joe and the morning sun](/assets/images/screened-in-porch/morning-cup-and-sunshine.webp)
+![No doubt mornings are my favorite time when the weather is ideal](/assets/images/screened-in-porch/morning-sun-on-the-screen.webp)
+![A rare snow](/assets/images/screened-in-porch/porch-and-the-snow.webp)
+![A most humble and inviting porch](/assets/images/screened-in-porch/porch-from-the-outside.webp)
