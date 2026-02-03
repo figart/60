@@ -121,9 +121,13 @@
               slide.setAttribute('data-slide-index', slideIndex);
               slideIndex++;
               var figure = createFigure(img, true);
-              // Mark video slides for styling
+              // Mark video slides for styling and add click overlay
               if (figure.querySelector('iframe')) {
                 slide.classList.add('splide__slide--video');
+                // Add overlay to intercept clicks and open lightbox
+                var overlay = document.createElement('div');
+                overlay.className = 'video-click-overlay';
+                figure.querySelector('.media-wrapper').appendChild(overlay);
               }
               slide.appendChild(figure);
               list.appendChild(slide);
@@ -507,16 +511,17 @@
           closeLightbox();
         });
 
-        // Open lightbox when clicking on images or video wrappers
+        // Open lightbox when clicking on images or video overlays
         content.addEventListener('click', function(e) {
           var figure = e.target.closest('figure');
           if (!figure) return;
 
           var img = figure.querySelector('img');
           var iframe = figure.querySelector('iframe');
+          var isVideoOverlay = e.target.classList.contains('video-click-overlay');
 
-          // Only open lightbox for images (videos play in carousel)
-          if (img && e.target.tagName === 'IMG') {
+          // Open lightbox for images or video overlay clicks
+          if ((img && e.target.tagName === 'IMG') || isVideoOverlay) {
             e.preventDefault();
 
             // Check if inside a carousel
@@ -543,10 +548,16 @@
                   galleryItems.push({ type: 'image', src: slideImg.src, alt: slideImg.alt || caption });
                 }
               });
-              // Find index of clicked image
-              currentIndex = galleryItems.findIndex(function(item) {
-                return item.type === 'image' && item.src === img.src;
-              });
+              // Find index of clicked item
+              if (isVideoOverlay && iframe) {
+                currentIndex = galleryItems.findIndex(function(item) {
+                  return item.type === 'video' && item.src === iframe.src;
+                });
+              } else if (img) {
+                currentIndex = galleryItems.findIndex(function(item) {
+                  return item.type === 'image' && item.src === img.src;
+                });
+              }
               if (currentIndex === -1) currentIndex = 0;
             } else {
               // Single image mode
