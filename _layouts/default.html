@@ -51,7 +51,7 @@
 
           if (youtubeMatch) {
             var iframe = document.createElement('iframe');
-            iframe.src = 'https://www.youtube.com/embed/' + youtubeMatch[1];
+            iframe.src = 'https://www.youtube.com/embed/' + youtubeMatch[1] + '?enablejsapi=1';
             iframe.setAttribute('frameborder', '0');
             iframe.setAttribute('allowfullscreen', '');
             iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
@@ -145,6 +145,17 @@
             }).mount();
             // Store instance on element for lightbox syncing
             splide.splide = splideInstance;
+
+            // Pause YouTube videos when navigating away from them
+            splideInstance.on('move', function(newIndex, prevIndex) {
+              var slides = splide.querySelectorAll('.splide__slide');
+              if (slides[prevIndex]) {
+                var iframe = slides[prevIndex].querySelector('iframe');
+                if (iframe && iframe.src.indexOf('youtube.com') !== -1) {
+                  iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                }
+              }
+            });
 
             // Move pagination inside track for consistent positioning
             var pagination = splide.querySelector('.splide__pagination');
