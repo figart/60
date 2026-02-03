@@ -146,6 +146,28 @@
             // Store instance on element for lightbox syncing
             splide.splide = splideInstance;
 
+            // Move pagination inside track for consistent positioning
+            var pagination = splide.querySelector('.splide__pagination');
+            if (pagination) {
+              track.appendChild(pagination);
+
+              // Position pagination at bottom of image area, updating on resize
+              var mediaWrapper = splide.querySelector('.media-wrapper');
+              if (mediaWrapper) {
+                function positionPagination() {
+                  var mediaWidth = mediaWrapper.offsetWidth;
+                  var imageHeight = mediaWidth * (9 / 16); // 16:9 aspect ratio
+                  var padding = 40; // Distance from bottom of image
+                  var topOffset = imageHeight - padding;
+                  pagination.style.top = topOffset + 'px';
+                  pagination.style.bottom = 'auto';
+                }
+
+                positionPagination();
+                window.addEventListener('resize', positionPagination);
+              }
+            }
+
             carouselIndex++;
           }
         });

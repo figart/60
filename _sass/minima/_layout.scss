@@ -337,6 +337,7 @@
 
     .splide__track {
       overflow: hidden;
+      position: relative;  // Make track the positioning context for pagination
     }
 
     .splide__slide {
@@ -435,14 +436,10 @@
 
     .splide__pagination {
       position: absolute !important;
-      bottom: 6.5rem !important;
+      bottom: 1rem;  // Fallback; JavaScript calculates actual position based on caption height
 
       @media (max-width: 389px) {
         display: none !important;
-      }
-
-      @media (min-width: 480px) {
-        bottom: 5rem !important;
       }
       left: 50% !important;
       right: auto !important;
