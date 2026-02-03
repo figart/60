@@ -342,6 +342,12 @@
           }
         });
 
+        // Close button click handler
+        closeBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          closeLightbox();
+        });
+
         // Update counter and arrows display
         function updateCounter() {
           if (galleryItems.length > 1) {
@@ -580,11 +586,13 @@
           }
         });
 
-        // Keyboard navigation
+        // Keyboard navigation (use capture to intercept before iframe gets focus)
         document.addEventListener('keydown', function(e) {
           if (!overlay.classList.contains('active')) return;
 
           if (e.key === 'Escape') {
+            e.preventDefault();
+            e.stopPropagation();
             closeLightbox();
           }
           if (e.key === 'ArrowRight' && galleryItems.length > 1) {
@@ -595,7 +603,7 @@
             currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
             showItem(currentIndex);
           }
-        });
+        }, { capture: true });
 
         // Touch swipe navigation for mobile
         var touchStartX = 0;
