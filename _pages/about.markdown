@@ -3,6 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 nav_title: About
+image: /assets/images/hiking-on-the-guadalupe-river.webp
 ---
 
 ![](/assets/images/hiking-on-the-guadalupe-river.webp)
@@ -31,7 +32,7 @@ A month later, I rode a motorcycle across Mexico with a group of friends. I'd ra
 
 ## What I Care About
 
-I keep coming back to a phrase I picked up somewhere in childhood: *Leave things better than you found them.* It's become a kind of operating principle—for client work, for relationships, for the land I live on.
+I keep coming back to a phrase I picked up somewhere in childhood: _Leave things better than you found them._ It's become a kind of operating principle—for client work, for relationships, for the land I live on.
 
 I'm drawn to simplicity, though I don't always achieve it. I meditate, inconsistently. I run trails, I make sawdust in my shop and occasionally turn it into furniture, and I noodle on my guitar sporadically. I've always wanted to write a song, but as of yet, have little to show for that aspiration.
 
@@ -44,7 +45,6 @@ If you want to talk about marketing, business, Ukraine, motorcycling, woodworkin
 - [Send me an email](#){:.contact-link}
 - **LinkedIn:** [linkedin.com/in/figart](https://www.linkedin.com/in/figart/)
 - **Digett:** [digett.com](https://www.digett.com
-
 
 ### For my fellow geeks
 

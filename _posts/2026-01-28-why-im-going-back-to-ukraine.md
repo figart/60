@@ -2,13 +2,14 @@
 layout: post
 title: "Why I'm going back to Ukraine"
 date: 2026-01-28
+image: /assets/images/ukraine/at-city-hall-in-lviv.webp
 ---
 
-The worst cappuccino I ever had was in Folkestone, England. 
+The worst cappuccino I ever had was in Folkestone, England.
 
 Folkestone is a coastal town where, eighty years earlier, tens of thousands of soldiers walked down the very same street on which I stood on their way down to the Channel. They were headed to war. Leaving a half-finished cappuccino behind, I was headed to catch a ferry, along with a used ambulance and a cough I couldn't shake—not exactly the same stakes, but I'd like to think we shared a certain grim determination.
 
-My 60th birthday arrived at midnight just after crossing the Channel, and my comrades helped celebrate the occasion by singing happy birthday to me at an Esso roadside fuel station just up the coast from Dunkirk. Standing under fluorescent lights, surrounded by a cheerful bunch of Brits, I might have imagined something different—a nice dinner, maybe, or a cake from somewhere other than a gas station—but honestly, it was perfect. 
+My 60th birthday arrived at midnight just after crossing the Channel, and my comrades helped celebrate the occasion by singing happy birthday to me at an Esso roadside fuel station just up the coast from Dunkirk. Standing under fluorescent lights, surrounded by a cheerful bunch of Brits, I might have imagined something different—a nice dinner, maybe, or a cake from somewhere other than a gas station—but honestly, it was perfect.
 
 After that the days blurred, driving twelve hours at a stretch trying to keep up with the British crew who have done this run literally dozens of times, the way some people commute to the office.
 
@@ -18,18 +19,17 @@ That was last March. I'd come across this opportunity thanks to a fellow Rotaria
 
 I almost didn't go last year. Not because I was afraid of what might happen in Ukraine—I've always had a bit of the adventurer in me—but because I'd come down with a nasty cough days before my flight and wasn't sure I'd recover in time. I paid the airline $700 at the last minute to delay my departure, spent the next 48 hours lying on my couch wondering if I should just stay home, then decided to go only because I wasn't getting worse as far as I could tell. The cough came with me. Across the Channel, through the checkpoints, past the occasional soldiers stationed at bridges, all the way to Lviv. I'm sure I made an inspiring impression: The American volunteer, hacking into his elbow while trying to look stoic.
 
-
 ## A second time
 
 I've been trying to articulate why I want to do it again.
 
-It's not the adventure, though I won't pretend the adventure isn't part of it. Driving across northern Europe in a convoy _feels_ like something—purposeful, kinetic, alive. I'm fortunate to have had my fair share of adventures, and this one ranks right up there among the best. But it's not exactly a vacation. 
+It's not the adventure, though I won't pretend the adventure isn't part of it. Driving across northern Europe in a convoy _feels_ like something—purposeful, kinetic, alive. I'm fortunate to have had my fair share of adventures, and this one ranks right up there among the best. But it's not exactly a vacation.
 
-Part of it is the people. The Ukrainians I met weren't victims waiting to be saved. They were doctors running hospitals, widows helping widows, comedians still telling jokes, printers still running presses. They were kind and thoughtful humans who welcomed me and made time for me. They didn't want or need pity. But they did need vehicles, medical supplies, water purification systems, diapers. 
+Part of it is the people. The Ukrainians I met weren't victims waiting to be saved. They were doctors running hospitals, widows helping widows, comedians still telling jokes, printers still running presses. They were kind and thoughtful humans who welcomed me and made time for me. They didn't want or need pity. But they did need vehicles, medical supplies, water purification systems, diapers.
 
 My fellow crew mates were, admittedly, the real highlight of my trip. Hanging out together at a pub in Lviv swapping stories was just one of so many fine memories I collected while traveling with these gents.
 
-Another part of the draw to return is the energy I experienced. At the border crossing back into Poland, after days inside Ukraine, I felt something I didn't expect—a kind of density, a heaviness to the air. Everyone who has crossed that line in the last three years has left something behind. Refugees. Soldiers. Mothers with children pressed to their chests. Aid workers running on caffeine and purpose. Journalists with notepads full of things observed they'll never un-see. And there I was, a dude from Boerne, Texas, who showed up with a used ambulance, a bad cough, and a backpack. 
+Another part of the draw to return is the energy I experienced. At the border crossing back into Poland, after days inside Ukraine, I felt something I didn't expect—a kind of density, a heaviness to the air. Everyone who has crossed that line in the last three years has left something behind. Refugees. Soldiers. Mothers with children pressed to their chests. Aid workers running on caffeine and purpose. Journalists with notepads full of things observed they'll never un-see. And there I was, a dude from Boerne, Texas, who showed up with a used ambulance, a bad cough, and a backpack.
 
 At these checkpoints the noise drops away. You stop talking and just wait. The mood gets serious and there's time to reflect on the despair around you. It's not pleasant, but for someone who has lived such a privileged and sheltered life as I have, it's a major mind expansion. I found that I returned home with a healthier perspective on my own place in society.
 

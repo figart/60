@@ -2,6 +2,7 @@
 layout: post
 title: "A Case for the Humble Screened-In Porch"
 date: 2024-02-13
+image: /assets/images/screened-in-porch/morning-sun-on-the-screen.webp
 ---
 
 When I bought my house, the porch was rotting. The floor sagged, and the "cover" (I couldn't call it a roof) was giving up. It was one of those features that showed up in the listing photos from an angle that tried to hide the decay. I didn't think much about it, as I had bigger problems to solve at the time.
@@ -28,7 +29,7 @@ Usually that's what we do.
 
 My wife Claudia spends as much time on the porch as I do—maybe more. Morning coffee, most days. Evening drinks when the light gets soft. In the more pleasant times of the year the grill might get used a couple times a week, and the staging area for the dogs—on their way in, on their way out—has become so natural that I can't imagine the house without it. The porch isn't precious. It's lived in. The leather chairs show the abuse they take from the sun. The grill has grease stains. This is not a showroom. It's just a room, outside.
 
-![Family on the porch](/assets/images/screened-in-porch/extended-family-on the porch.webp)
+![Family on the porch](/assets/images/screened-in-porch/extended-family-on-the-porch.webp)
 
 It's where we've made so many memories. Not dramatic ones—no proposals or milestone announcements. Just the accumulating kind. Conversations that went longer than expected. Storms watched from the dry side of the screen. Dinners that started on the grill and never made it to the dining room. The porch has become the place where our life together actually _happens_, more than any room inside the house. I didn't anticipate that when I framed it out for screens. But it's the thing I'm most grateful for.
 
