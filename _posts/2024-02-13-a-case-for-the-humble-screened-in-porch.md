@@ -26,7 +26,7 @@ The porch removes the negotiation. It says: _You can be here. Stay as long as yo
 
 Usually that's what we do.
 
-My wife Claudia spends as much time on the porch as I do—maybe more. Morning coffee, most days. Evening drinks when the light gets soft. In the more pleasant time mes of the year y he grill might get used a couple times a week, and the staging area for the dogs—on their way in, on their way out—has become so natural that I can't imagine the house without it. The porch isn't precious. It's lived in. The leather chairs show the abuse they take from the sun. The grill has grease stains. This is not a showroom. It's just a room, outside.
+My wife Claudia spends as much time on the porch as I do—maybe more. Morning coffee, most days. Evening drinks when the light gets soft. In the more pleasant times of the year the grill might get used a couple times a week, and the staging area for the dogs—on their way in, on their way out—has become so natural that I can't imagine the house without it. The porch isn't precious. It's lived in. The leather chairs show the abuse they take from the sun. The grill has grease stains. This is not a showroom. It's just a room, outside.
 
 ![Family on the porch](/assets/images/screened-in-porch/extended-family-on the porch.webp)
 
@@ -52,7 +52,7 @@ I see them all the time—open porches, covered patios, back decks with roofs—
 
 ![Who knew the porch could be so enjoyable even when we aren't actually out on it?](/assets/images/screened-in-porch/looking-onto-porch-at-night.webp)
 
-The ROI is absurd. Not in resale value—though it probably helps—but in _lived_ value, on those mornings that start a little slower, During the evenings that extend a little later. In the simple, repeatable pleasure of sitting in a leather chair, surrounded by cedar and trees and dogs, feeling like you're outside under the fan even when the heat index says you shouldn't be.
+The ROI is absurd. Not in resale value—though it probably helps—but in _lived_ value, on those mornings that start a little slower, during the evenings that extend a little later. In the simple, repeatable pleasure of sitting in a leather chair, surrounded by cedar and trees and dogs, feeling like you're outside under the fan even when the heat index says you shouldn't be.
 
 I never want to live without a screened-in porch again.
 
