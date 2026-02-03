@@ -65,7 +65,7 @@ If you've got the space—or an unused porch waiting to be rescued—consider th
 ![The porch can be a great place to work.](/assets/images/screened-in-porch/great-place-to-work.webp)
 ![A cup of joe and the morning sun](/assets/images/screened-in-porch/morning-cup-and-sunshine.webp)
 ![No doubt mornings are my favorite time when the weather is ideal](/assets/images/screened-in-porch/morning-sun-on-the-screen.webp)
-![A rare snow](/assets/images/screened-in-porch/porch-and-the-snow.webp)
+![A rare snow, and so strange how it actually seemed to have snowed on the porch!](/assets/images/screened-in-porch/porch-and-the-snow.webp)
 ![A most humble and inviting porch](/assets/images/screened-in-porch/porch-from-the-outside.webp)
 ![A snowy porch scene](#youtube:Zaqccj5l6k4)
 ![The deer at play](#youtube:6b1fqNExOcg)
