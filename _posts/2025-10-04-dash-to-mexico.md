@@ -3,6 +3,7 @@ layout: post
 title: "Dash to the Sierra Madre Oriental"
 date: 2025-10-04
 image: /assets/images/los-tres-amigos-linares.webp
+subtitle: An amazing (though abbreviated) adventure last weekend in the mountains south of Monterrey with my buddies Don and Bill.
 ---
 
 I realized on Monday, at the end of that final stretch from Laredo northward, soon after having dismounted the bike under cover of my carport, that it was the 29th of September. Precisely one month had passed since the day on which we were originally set to embark on our Mexico motorcycling adventure.
@@ -12,6 +13,16 @@ For me, this last month will go down in the books as one of the most jarring per
 A triumphant September finale.
 A triumphant September finale.
 A triumphant September finale!
+
+![Beautiful Monterrey and the mountains beyond](/assets/images/sierra-madre-oriental-2025/beautiful-monterrey-and-the-mountains-beyond.webp)
+![Chill with Bill](/assets/images/sierra-madre-oriental-2025/chill-with-bill.webp)
+![Don and Mark](/assets/images/sierra-madre-oriental-2025/don-and-mark.webp)
+![Don and Mark with motos](/assets/images/sierra-madre-oriental-2025/don-and-mark-with-motos.webp)
+![Hangin with Bill at dinner](/assets/images/sierra-madre-oriental-2025/hangin-with-bill-at-dinner.webp)
+![La Paloma Blanca in Santiago](/assets/images/sierra-madre-oriental-2025/la-paloma-blanca-in-santiago.webp)
+![Scenery](/assets/images/sierra-madre-oriental-2025/scenery.webp)
+![Taking pics along the way](/assets/images/sierra-madre-oriental-2025/taking-pics-along-the-way.webp)
+![Through the valley](/assets/images/sierra-madre-oriental-2025/through-the-valley.webp)
 
 That you guys stayed with me and followed through on your expressed intent to accompany me across the frontera—despite my having pulled the plug once already at such an inconvenient hour, and despite my not having helped you avoid my own fate of losing my permit deposit—that the three of us, after all that, _still_ knocked out a badass four-day, fifteen-hundred-mile ride through foreign lands that welcomed and challenged each of us in one way or another... Well, that's just cool.
 
