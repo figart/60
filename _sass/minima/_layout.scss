@@ -306,7 +306,7 @@
   margin-bottom: 0.9375rem;
 
   figure {
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
 
     img {
       display: block;
@@ -332,7 +332,7 @@
   }
 
   .gallery-carousel {
-    margin: 1.5rem 0 1.5rem;
+    margin: 2.5rem 0;
     position: relative;
 
     .splide__track {
@@ -398,19 +398,15 @@
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: 3.5rem;  // Exclude caption area so arrows center on image
       pointer-events: none;
     }
 
     .splide__arrow {
       position: absolute;
-      top: calc(50% - 4rem);
+      top: 50%;
       transform: translateY(-50%);
-
-      @media (min-width: 480px) {
-        top: calc(50% - 2.5rem);
-      }
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.7);
       border: none;
       border-radius: 50%;
       width: 2.5rem;
@@ -429,15 +425,17 @@
       }
 
       &:hover {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.8);
       }
 
       &--prev {
         left: 0.75rem;
+        background: rgba(0, 0, 0, 0.7);
       }
 
       &--next {
         right: 0.75rem;
+        background: rgba(0, 0, 0, 0.7);
       }
 
       &:disabled {
@@ -463,7 +461,7 @@
       gap: 0.28rem;
       padding: 0.25rem 0.75rem !important;
       margin: 0 !important;
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0.55);
       border-radius: 1rem;
     }
 
