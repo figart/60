@@ -47,7 +47,7 @@ In five weeks, I'll fly to London, meet up with the convoy, and do it all again.
 
 Every dollar goes toward the vehicle and the delivery. 100%. I cover my own travel.
 
-If you've ever wanted to do something direct—something where you can see exactly where your help goes—this could be it. A car becomes a lifeline, an ambulance becomes a hospital on wheels. A Toyota Hilux becomes the transport for supplies to a village that can't be reached any other way.
+**If you've ever wanted to do something direct—something where you can see exactly where your help goes—this could be it.** A car becomes a lifeline, an ambulance becomes a hospital on wheels. A Toyota Hilux becomes the transport for supplies to a village that can't be reached any other way.
 
 I don't know if I'll do this every year. I don't know if the war will still be grinding on next March. I hope not. But right now, the need is real, and I've got five weeks to raise the money.
 

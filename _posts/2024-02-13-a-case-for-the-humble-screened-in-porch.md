@@ -19,6 +19,8 @@ The porch I ended up with is not large. Eight feet deep, twenty-four feet wide. 
 
 The porch is finished in natural cedar, which does something subtle but important: It extends the feeling of the forest _into_ the space. You're not sitting in a room that looks out at nature. You're sitting _in_ nature, just with a screen between you and the mosquitoes. Shrubs grow right up against the front edge. The trees beyond them filter the light. On a good morning, with the coffee hot and the dogs sprawled at my feet, I'm not observing the land. I'm _part of_ it.
 
+> _"Thunder rolls overhead while sheets of droplets pepper the rooftop and metal porch covering... Mine is a natural hideaway, my 'cabin in the woods,' I like to call it."_ — Journal, February 2024
+
 This is the thing about a screened-in porch that's hard to explain until you have one. It solves an ancient human problem. We want to be outside. We evolved outside. But outside has bugs and heat and wind and rain and all the reasons we built walls and roofs in the first place. The porch lets you cheat. You get the birdsong without the mosquitoes. The breeze without the dust. The thunderstorm without getting wet.
 
 I live in a temperate climate, which means almost every month of the year offers at least some window to sit outside comfortably. But "comfortably" is doing a lot of work in that sentence. Without the screens, summer evenings are a negotiation with insects. Without the roof, spring means dodging showers. Without the partial shelter from wind, even a mild day can feel like an assault.
@@ -32,6 +34,8 @@ My wife Claudia spends as much time on the porch as I do—maybe more. Morning c
 ![Family on the porch](/assets/images/screened-in-porch/extended-family-on-the-porch.webp)
 
 It's where we've made so many memories. Not dramatic ones—no proposals or milestone announcements. Just the accumulating kind. Conversations that went longer than expected. Storms watched from the dry side of the screen. Dinners that started on the grill and never made it to the dining room. The porch has become the place where our life together actually _happens_, more than any room inside the house. I didn't anticipate that when I framed it out for screens. But it's the thing I'm most grateful for.
+
+> _"A cozy house with an even cozier porch, a beautiful view on a perfect early fall evening, a chorus of crickets, two sleeping dogs, and the most amazing wife a man could ever hope for."_ — Journal, October 27, 2025
 
 ## Engawa
 

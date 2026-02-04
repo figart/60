@@ -31,10 +31,10 @@ To Don and Bill:
 >
 > Gracias, caballeros. With two finer gentlemen I could not have ridden. For me, a most memorable and healing experience. Proof that good things happen.
 >
-> May your tank never run empty,\
+> _May your tank never run empty,\
 > Your tires always have tread.\
 > Your socks always be numbered,\
-> With a voice in your head.
+> With a voice in your head._
 >
 > "Car up!"
 
