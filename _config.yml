@@ -31,10 +31,18 @@ github_username: figart
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Include _pages directory
 include:
   - _pages
+
+# Default front matter values
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-default.webp
 
 # Header navigation pages (commented out to auto-include all pages)
 # header_pages:
