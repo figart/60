@@ -781,6 +781,27 @@
 }
 
 /**
+ * Callout notes
+ */
+.post-content aside.callout {
+  background: #ebe7e1;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 1.15;
+  font-style: italic;
+
+  [data-theme="dark"] & {
+    background: #2a2725;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+
+/**
  * Post content links
  */
 .post-content a {
