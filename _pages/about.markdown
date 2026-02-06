@@ -16,7 +16,7 @@ When I'm not working, I'm likely on my screened-in porch, in my shop, on a trail
 
 ## The Longer Version
 
-I've spent most of my career helping businesses figure out how to connect with the people they're trying to serve. I started in the early '90s as a technical writer, moved into software development, then consulting, and eventually circumstances (aka _needing a job_) led me to start my own agency.
+I've spent most of my career helping businesses figure out how to connect with the people they're trying to serve. I started in the early '90s as a technical writer, moved into software development, then consulting, and eventually circumstances (aka _needing a job_) led me to start my own digitally-focused marketing agency.
 
 Before Digett, I held a senior management position at Emerging, a Houston-based consultancy, and did extended engagements with organizations like Goldman Sachs, Schlumberger, AIM Investments, and Delmarva Power. Along the way, I became convinced that most marketing is broken—not because people don't try hard enough, but because they build on weak foundations. Digett attempts to improve upon that, one client at a time.
 
