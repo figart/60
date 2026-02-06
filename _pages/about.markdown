@@ -24,7 +24,7 @@ My focus has been on managed service providers (MSPs) and other professional ser
 
 ## Beyond the Day Job
 
-I'm a member of the Rotary Club of San Antonio and was honored to be named [Rotarian of the Year](https://www.rotarysa.org/news/rotary-club-of-san-antonio-honors-four-members-at-annual-awards-presentation){:target="_blank"} for the 2024–2025 Rotary year. Rotary has been a grounding force—a reminder that service can be both effective \_and_ a lot of fun.
+I'm a member of the Rotary Club of San Antonio and was honored to be named [Rotarian of the Year](https://www.rotarysa.org/news/rotary-club-of-san-antonio-honors-four-members-at-annual-awards-presentation){:target="_blank"} for the 2024–2025 Rotary year. Rotary has been a grounding force—a reminder that service can be both effective _and_ a lot of fun.
 
 In March 2025, I joined a convoy of Rotary volunteers who drive vehicles purchased with donated funds from London to Ukraine. We crossed the Channel, drove through France, Germany, and Poland, and delivered the vehicles directly to Ukrainians who needed them. I turned 60 somewhere along the way. I'm going back in 2026 unless something bigger than me convinces me I shouldn't.
 
