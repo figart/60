@@ -188,18 +188,12 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - #{$spacing-unit});
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
   @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: calc(#{$content-width} - #{$spacing-unit});
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
 }
 
 
