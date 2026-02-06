@@ -312,6 +312,7 @@
       display: block;
       max-width: 100%;
       height: auto;
+      box-sizing: border-box;
       background: var(--photo-border-color);
       padding: 0.75rem;
       box-shadow:
