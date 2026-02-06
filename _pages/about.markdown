@@ -44,7 +44,7 @@ If you want to talk about marketing, business, Ukraine, motorcycling, woodworkin
 
 - [Send me an email](#){:.contact-link}
 - **LinkedIn:** [linkedin.com/in/figart](https://www.linkedin.com/in/figart/)
-- **Digett:** [digett.com](https://www.digett.com
+- **Digett:** [digett.com](https://www.digett.com)
 
 ### For my fellow geeks
 
