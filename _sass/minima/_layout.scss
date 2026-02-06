@@ -343,8 +343,7 @@
 
     .splide__track {
       overflow: hidden;
-      position: relative;  // Make track the positioning context for pagination
-      padding: 0.5rem 0 1.5rem;  // Room for shadow inside overflow container
+      position: relative;
     }
 
     .splide__slide {
@@ -360,16 +359,12 @@
 
       .media-wrapper {
         position: relative;
-        width: calc(100% - 1.5rem);  // Leave room for shadow
-        margin: 0 auto;
+        width: 100%;
         box-sizing: border-box;
         aspect-ratio: 16 / 9;
         overflow: hidden;
         background: var(--photo-border-color);
         padding: 0.75rem;
-        box-shadow:
-          0 2px 8px rgba(0, 0, 0, 0.12),
-          0 4px 20px rgba(0, 0, 0, 0.08);
       }
 
       img {
@@ -462,7 +457,7 @@
 
     .splide__pagination {
       position: absolute !important;
-      bottom: 0.25rem;  // Position in track's bottom padding, below the photo border
+      bottom: 1rem;
 
       @media (max-width: 389px) {
         display: none !important;
