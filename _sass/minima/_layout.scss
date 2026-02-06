@@ -409,13 +409,14 @@
       top: 0;
       left: 0;
       right: 0;
-      bottom: 3.5rem;  // Exclude caption area so arrows center on image
+      bottom: 0;
       pointer-events: none;
     }
 
     .splide__arrow {
       position: absolute;
-      top: 50%;
+      // Center vertically on image: (image height / 2)
+      top: calc(min(100vw - 1.875rem, 38.75rem) * 0.5625 / 2);
       transform: translateY(-50%);
       background: rgba(0, 0, 0, 0.7);
       border: none;
@@ -440,12 +441,12 @@
       }
 
       &--prev {
-        left: 0.75rem;
+        left: 1.25rem;
         background: rgba(0, 0, 0, 0.7);
       }
 
       &--next {
-        right: 0.75rem;
+        right: 1.25rem;
         background: rgba(0, 0, 0, 0.7);
       }
 
