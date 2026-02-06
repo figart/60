@@ -365,6 +365,7 @@
         overflow: hidden;
         background: var(--photo-border-color);
         padding: 0.75rem;
+        margin-bottom: 2rem;  // Space for pagination below the border
       }
 
       img {
