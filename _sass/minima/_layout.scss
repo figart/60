@@ -462,7 +462,7 @@
 
     .splide__pagination {
       position: absolute !important;
-      bottom: 1rem;  // Fallback; JavaScript calculates actual position based on caption height
+      bottom: 0.25rem;  // Position in track's bottom padding, below the photo border
 
       @media (max-width: 389px) {
         display: none !important;
