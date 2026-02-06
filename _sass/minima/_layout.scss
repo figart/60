@@ -344,7 +344,6 @@
     .splide__track {
       overflow: hidden;
       position: relative;
-      padding-bottom: 1rem !important;
     }
 
     .splide__slide {
@@ -364,8 +363,7 @@
         box-sizing: border-box;
         aspect-ratio: 16 / 9;
         overflow: hidden;
-        background: var(--photo-border-color);
-        padding: 0.75rem;
+        border: 0.75rem solid var(--photo-border-color);
       }
 
       img {
