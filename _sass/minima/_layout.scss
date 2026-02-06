@@ -360,7 +360,7 @@
       .media-wrapper {
         position: relative;
         width: calc(100% - 1.5rem);  // Leave room for shadow
-        margin: 0 auto;
+        margin: 0.5rem auto 1.5rem;  // Top/bottom margin for shadow visibility
         box-sizing: border-box;
         aspect-ratio: 16 / 9;
         overflow: hidden;
