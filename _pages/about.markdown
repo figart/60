@@ -10,7 +10,7 @@ image: /assets/images/hiking-on-the-guadalupe-river.webp
 
 ## The Short Version
 
-I'm the founder and principal of [Digett](https://www.digett.com), a digital marketing agency I started in 2001. We help organizations build marketing systems that attract advocates, build loyalty and create lasting value. I live in the Texas Hill Country with my wife Claudia and more dogs than I'd originally planned for.
+I'm the founder and principal of [Digett](https://www.digett.com){:target="\_blank"}, a digital marketing agency I started in 2001. We help organizations build marketing systems that attract advocates, build loyalty and create lasting value. I live in the Texas Hill Country with my wife Claudia and more dogs than I'd originally planned for.
 
 When I'm not working, I'm likely on my screened-in porch, in my shop, on a trail somewhere on foot or motorcycle, or planning a trip to a new destination.
 
@@ -43,8 +43,8 @@ I believe that what we experience matters infinitely more than what we accumulat
 If you want to talk about marketing, business, Ukraine, motorcycling, woodworking, or anything else, I'm easy to find:
 
 - [Send me an email](#){:.contact-link}
-- **LinkedIn:** [linkedin.com/in/figart](https://www.linkedin.com/in/figart/)
-- **Digett:** [digett.com](https://www.digett.com)
+- **LinkedIn:** [linkedin.com/in/figart](https://www.linkedin.com/in/figart/){:target="\_blank"}
+- **Digett:** [digett.com](https://www.digett.com){:target="\_blank"}
 
 ### For my fellow geeks
 
