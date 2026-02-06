@@ -344,6 +344,7 @@
     .splide__track {
       overflow: hidden;
       position: relative;  // Make track the positioning context for pagination
+      padding: 0.5rem 0 1.5rem;  // Room for shadow inside overflow container
     }
 
     .splide__slide {
@@ -360,7 +361,7 @@
       .media-wrapper {
         position: relative;
         width: calc(100% - 1.5rem);  // Leave room for shadow
-        margin: 0.5rem auto 1.5rem;  // Top/bottom margin for shadow visibility
+        margin: 0 auto;
         box-sizing: border-box;
         aspect-ratio: 16 / 9;
         overflow: hidden;
