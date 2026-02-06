@@ -315,9 +315,11 @@
       box-sizing: border-box;
       background: var(--photo-border-color);
       padding: 0.75rem;
+      border-radius: 2px 4px 3px 5px;
       box-shadow:
-        0 2px 8px rgba(0, 0, 0, 0.12),
-        0 4px 20px rgba(0, 0, 0, 0.08);
+        1px 2px 8px rgba(0, 0, 0, 0.14),
+        -1px 4px 20px rgba(0, 0, 0, 0.08),
+        2px 1px 4px rgba(0, 0, 0, 0.06);
     }
 
     iframe {
@@ -364,6 +366,11 @@
         aspect-ratio: 16 / 9;
         overflow: hidden;
         border: 0.75rem solid var(--photo-border-color);
+        border-radius: 2px 4px 3px 5px;
+        box-shadow:
+          1px 2px 8px rgba(0, 0, 0, 0.14),
+          -1px 4px 20px rgba(0, 0, 0, 0.08),
+          2px 1px 4px rgba(0, 0, 0, 0.06);
       }
 
       img {
