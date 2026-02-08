@@ -306,12 +306,20 @@
   margin-bottom: 0.9375rem;
 
   figure {
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
 
     img {
       display: block;
       max-width: 100%;
       height: auto;
+      box-sizing: border-box;
+      background: var(--photo-border-color);
+      padding: 0.75rem;
+      border-radius: 2px 4px 3px 5px;
+      box-shadow:
+        1px 2px 8px rgba(0, 0, 0, 0.14),
+        -1px 4px 20px rgba(0, 0, 0, 0.08),
+        2px 1px 4px rgba(0, 0, 0, 0.06);
     }
 
     iframe {
@@ -332,11 +340,12 @@
   }
 
   .gallery-carousel {
-    margin: 1.5rem 0 1.5rem;
+    margin: 2.5rem 0;
     position: relative;
 
     .splide__track {
       overflow: hidden;
+      position: relative;
     }
 
     .splide__slide {
@@ -353,15 +362,25 @@
       .media-wrapper {
         position: relative;
         width: 100%;
+        box-sizing: border-box;
         aspect-ratio: 16 / 9;
         overflow: hidden;
-        background: #000;
+        border: 0.75rem solid var(--photo-border-color);
+        border-radius: 2px 4px 3px 5px;
+        box-shadow:
+          1px 2px 8px rgba(0, 0, 0, 0.14),
+          -1px 4px 20px rgba(0, 0, 0, 0.08),
+          2px 1px 4px rgba(0, 0, 0, 0.06);
       }
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        // Reset photo border styles - carousel handles its own presentation
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
       }
 
       iframe {
@@ -381,6 +400,17 @@
       }
     }
 
+    // Transparent overlay to capture clicks on videos and open lightbox
+    .video-click-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 1;
+    }
+
     .splide__arrows {
       position: absolute;
       top: 0;
@@ -392,13 +422,10 @@
 
     .splide__arrow {
       position: absolute;
-      top: calc(50% - 4rem);
+      // Center vertically on image: (image height / 2)
+      top: calc(min(100vw - 1.875rem, 38.75rem) * 0.5625 / 2);
       transform: translateY(-50%);
-
-      @media (min-width: 480px) {
-        top: calc(50% - 2.5rem);
-      }
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.7);
       border: none;
       border-radius: 50%;
       width: 2.5rem;
@@ -417,15 +444,17 @@
       }
 
       &:hover {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.8);
       }
 
       &--prev {
-        left: 0.75rem;
+        left: 1.25rem;
+        background: rgba(0, 0, 0, 0.7);
       }
 
       &--next {
-        right: 0.75rem;
+        right: 1.25rem;
+        background: rgba(0, 0, 0, 0.7);
       }
 
       &:disabled {
@@ -434,29 +463,35 @@
     }
 
     .splide__pagination {
-      position: absolute !important;
-      bottom: 6.5rem !important;
+      position: absolute;
+      bottom: auto;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 0.28rem;
+      padding: 0.25rem 0.75rem;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 1rem;
+
+      // Position from top based on image height (viewport width * 9/16)
+      // Consistent padding of 1.875rem total, capped at max-width
+      top: calc(min(100vw - 1.875rem, 38.75rem) * 0.5625 - 2.75rem);
 
       @media (max-width: 389px) {
-        display: none !important;
+        display: none;
       }
 
-      @media (min-width: 480px) {
-        bottom: 5rem !important;
+      li {
+        line-height: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
       }
-      left: 50% !important;
-      right: auto !important;
-      transform: translateX(-50%) !important;
-      display: flex !important;
-      justify-content: center !important;
-      flex-wrap: nowrap !important;
-      width: auto !important;
-      max-width: 100% !important;
-      gap: 0.28rem;
-      padding: 0.25rem 0.75rem !important;
-      margin: 0 !important;
-      background: rgba(0, 0, 0, 0.25);
-      border-radius: 1rem;
     }
 
     .splide__pagination__page {
@@ -773,6 +808,27 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+/**
+ * Callout notes
+ */
+.post-content aside.callout {
+  background: #ebe7e1;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 1.15;
+  font-style: italic;
+
+  [data-theme="dark"] & {
+    background: #2a2725;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 
 /**
  * Post content links

@@ -51,7 +51,7 @@
 
           if (youtubeMatch) {
             var iframe = document.createElement('iframe');
-            iframe.src = 'https://www.youtube.com/embed/' + youtubeMatch[1];
+            iframe.src = 'https://www.youtube.com/embed/' + youtubeMatch[1] + '?enablejsapi=1';
             iframe.setAttribute('frameborder', '0');
             iframe.setAttribute('allowfullscreen', '');
             iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
@@ -121,9 +121,13 @@
               slide.setAttribute('data-slide-index', slideIndex);
               slideIndex++;
               var figure = createFigure(img, true);
-              // Mark video slides for styling
+              // Mark video slides for styling and add click overlay
               if (figure.querySelector('iframe')) {
                 slide.classList.add('splide__slide--video');
+                // Add overlay to intercept clicks and open lightbox
+                var overlay = document.createElement('div');
+                overlay.className = 'video-click-overlay';
+                figure.querySelector('.media-wrapper').appendChild(overlay);
               }
               slide.appendChild(figure);
               list.appendChild(slide);
@@ -145,6 +149,23 @@
             }).mount();
             // Store instance on element for lightbox syncing
             splide.splide = splideInstance;
+
+            // Pause YouTube videos when navigating away from them
+            splideInstance.on('move', function(newIndex, prevIndex) {
+              var slides = splide.querySelectorAll('.splide__slide');
+              if (slides[prevIndex]) {
+                var iframe = slides[prevIndex].querySelector('iframe');
+                if (iframe && iframe.src.indexOf('youtube.com') !== -1) {
+                  iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                }
+              }
+            });
+
+            // Move pagination inside track so it positions relative to image area
+            var pagination = splide.querySelector('.splide__pagination');
+            if (pagination) {
+              track.appendChild(pagination);
+            }
 
             carouselIndex++;
           }
@@ -303,6 +324,12 @@
             currentIndex = (currentIndex + 1) % galleryItems.length;
             showItem(currentIndex);
           }
+        });
+
+        // Close button click handler
+        closeBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          closeLightbox();
         });
 
         // Update counter and arrows display
@@ -474,16 +501,17 @@
           closeLightbox();
         });
 
-        // Open lightbox when clicking on images or video wrappers
+        // Open lightbox when clicking on images or video overlays
         content.addEventListener('click', function(e) {
           var figure = e.target.closest('figure');
           if (!figure) return;
 
           var img = figure.querySelector('img');
           var iframe = figure.querySelector('iframe');
+          var isVideoOverlay = e.target.classList.contains('video-click-overlay');
 
-          // Only open lightbox for images (videos play in carousel)
-          if (img && e.target.tagName === 'IMG') {
+          // Open lightbox for images or video overlay clicks
+          if ((img && e.target.tagName === 'IMG') || isVideoOverlay) {
             e.preventDefault();
 
             // Check if inside a carousel
@@ -510,10 +538,16 @@
                   galleryItems.push({ type: 'image', src: slideImg.src, alt: slideImg.alt || caption });
                 }
               });
-              // Find index of clicked image
-              currentIndex = galleryItems.findIndex(function(item) {
-                return item.type === 'image' && item.src === img.src;
-              });
+              // Find index of clicked item
+              if (isVideoOverlay && iframe) {
+                currentIndex = galleryItems.findIndex(function(item) {
+                  return item.type === 'video' && item.src === iframe.src;
+                });
+              } else if (img) {
+                currentIndex = galleryItems.findIndex(function(item) {
+                  return item.type === 'image' && item.src === img.src;
+                });
+              }
               if (currentIndex === -1) currentIndex = 0;
             } else {
               // Single image mode
@@ -536,11 +570,13 @@
           }
         });
 
-        // Keyboard navigation
+        // Keyboard navigation (use capture to intercept before iframe gets focus)
         document.addEventListener('keydown', function(e) {
           if (!overlay.classList.contains('active')) return;
 
           if (e.key === 'Escape') {
+            e.preventDefault();
+            e.stopPropagation();
             closeLightbox();
           }
           if (e.key === 'ArrowRight' && galleryItems.length > 1) {
@@ -551,7 +587,7 @@
             currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
             showItem(currentIndex);
           }
-        });
+        }, { capture: true });
 
         // Touch swipe navigation for mobile
         var touchStartX = 0;

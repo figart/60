@@ -142,10 +142,10 @@ a {
 blockquote {
   color: var(--text-color);
   border-left: 2px solid var(--grey-color-light);
-  margin: 2.5rem 0 2.5rem 1rem;
+  margin: 3.5rem 0 3.5rem 1rem;
   padding-left: 1.25rem;
   @include relative-font-size(1.2);
-  font-style: italic;
+  font-style: normal;
   transition: color 0.3s ease, border-color 0.3s ease;
 
   > :last-child {
@@ -188,18 +188,12 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - #{$spacing-unit});
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
   @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: calc(#{$content-width} - #{$spacing-unit});
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
 }
 
 
