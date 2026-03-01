@@ -14,7 +14,7 @@ The user's input will contain:
 - **Update text**: The body content for the update (required)
 - **Image URLs**: Zero or more image URLs pasted inline (optional). These are downloaded into the repo and optimized.
 - **Captions**: Optional captions for images, provided near each URL (e.g., `https://url.com/photo.jpg "Morning light on the river"`)
-- **Google Photos shared album URL** (`photos.app.goo.gl/...` or `photos.google.com/share/...`): Fetch the album page, extract `lh3.googleusercontent.com` image URLs, confirm with the user which to include, then download them into the repo. If fetching fails, tell the user to open the album and share individual photo URLs instead.
+- **Google Photos shared album URL** (`photos.app.goo.gl/...` or `photos.google.com/share/...`): Fetch the album page, extract `lh3.googleusercontent.com` image URLs, and download all of them into the repo (do not ask which to include). If fetching fails, tell the user to open the album and share individual photo URLs instead.
 - **Local file paths** (e.g., `~/Photos/sunset.jpg`): Copy into the repo's image directory.
 
 ### 2. Create the Update File
@@ -60,13 +60,15 @@ All images — regardless of source — are downloaded into the repo and referen
 
 ### 4. Commit and Push to Master
 
-1. Stage all new files (the update markdown + any downloaded images)
-2. Commit with message: `Add update: YYYY-MM-DD-HHMM`
-3. Push to `origin master`
+1. Run `git pull` to ensure the local branch is up to date with the remote
+2. Stage all new files (the update markdown + any downloaded images)
+3. Commit with message: `Add update: YYYY-MM-DD-HHMM`
+4. Push to `origin master`
 
 ### Important Notes
 
 - Do NOT ask unnecessary questions. Use sensible defaults and just create it.
 - If anything is ambiguous, make a reasonable choice.
+- Minimize the number of Bash tool calls to reduce permission prompts. Chain related shell commands together with `&&` (e.g., `mkdir -p dir && curl ... && curl ...`). Combine the git pull, add, commit, and push into a single Bash call.
 - All timestamps must be derived using `TZ=America/Chicago date` — never rely on the system default timezone. The offset is `-0600` (Central Standard) or `-0500` (Central Daylight) depending on the time of year.
 - Always use `published: true` unless the user explicitly says "draft".
