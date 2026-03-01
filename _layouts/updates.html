@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home updates-index">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- assign updates = site.updates | sort: "date" | reverse -%}
+  {%- if updates.size > 0 -%}
+    <ul class="post-list">
+      {%- for update in updates -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ update.url | relative_url }}">
+            <span class="update-day">{{ update.date | date: "%A" }}</span> {{ update.date | date: "%-d %b %Y" }}
+          </a>
+        </h3>
+        <div class="update-excerpt">{{ update.excerpt }}</div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>

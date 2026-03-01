@@ -27,6 +27,12 @@ url: "https://www.markfigart.com" # the base hostname & protocol for your site, 
 twitter_username: figart
 github_username: figart
 
+# Collections
+collections:
+  updates:
+    output: true
+    permalink: /updates/:year/:month/:day/:title/
+
 # Build settings
 theme: minima
 plugins:
@@ -42,6 +48,12 @@ defaults:
   - scope:
       path: ""
     values:
+      image: /assets/images/og-default.webp
+  - scope:
+      path: ""
+      type: "updates"
+    values:
+      layout: update
       image: /assets/images/og-default.webp
 
 # Header navigation pages (commented out to auto-include all pages)
