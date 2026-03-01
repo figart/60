@@ -119,3 +119,9 @@ jobs:
             git commit -m "Optimize images: convert to WebP"
             git push
           fi
+
+      - name: Trigger deploy
+        if: steps.process.outputs.changes_made == 'true'
+        run: gh workflow run jekyll.yml
+        env:
+          GH_TOKEN: ${{ github.token }}

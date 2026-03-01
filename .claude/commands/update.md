@@ -45,7 +45,7 @@ All images — regardless of source — are downloaded into the repo and referen
 ![Caption](/assets/images/updates/YYYY-MM-DD-HHMM/morning-light-on-river.webp)
 ```
 
-**Captions**: Use the user-provided caption as alt text if given. Otherwise, generate brief descriptive alt text.
+**Captions**: Use the user-provided caption as alt text if given. If the image comes from Google Photos and has a description, use that as the caption. Otherwise, leave the alt text empty (e.g., `![](/path/to/image.webp)`).
 
 **Acquisition by source type**:
 
