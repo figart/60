@@ -867,6 +867,27 @@
   font-size: 0.875rem;
   font-weight: 300;
   letter-spacing: 0.07em;
+  text-decoration: underline;
+  text-decoration-color: rgba(128, 128, 128, 0.3);
+  transition: text-decoration-color 0.2s ease;
+
+  &:hover {
+    text-decoration-color: var(--grey-color);
+  }
+
+  &:visited {
+    text-decoration-color: rgba(128, 128, 128, 0.3);
+  }
+
+  &::after {
+    content: " \2192";
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover::after {
+    transform: translateX(3px);
+  }
 }
 
 .updates-index .post-list h3 {
