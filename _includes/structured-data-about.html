@@ -1,0 +1,18 @@
+{%- if page.permalink == "/about/" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "url": "{{ site.author.url }}",
+  "image": "{{ site.url }}{{ page.image }}",
+  "jobTitle": "Founder and Principal",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Digett",
+    "url": "https://www.digett.com"
+  },
+  "sameAs": {{ site.social.links | jsonify }}
+}
+</script>
+{%- endif -%}

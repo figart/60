@@ -4,6 +4,7 @@ title: "Dash to the Sierra Madre Oriental"
 date: 2025-10-04
 image: /assets/images/los-tres-amigos-linares.webp
 subtitle: An amazing (though abbreviated) adventure in the mountains south of Monterrey with my buddies Don and Bill.
+description: "A motorcycle adventure through the Sierra Madre Oriental south of Monterrey, Mexico — an abbreviated but unforgettable ride with friends after a turbulent month."
 ---
 
 I realized on Monday, at the end of that final stretch from Laredo northward, soon after having dismounted the bike under cover of my carport, that it was the 29th of September. Precisely one month had passed since the day on which we were originally set to embark on our Mexico motorcycling adventure.

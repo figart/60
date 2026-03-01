@@ -4,6 +4,7 @@ title: About Me
 permalink: /about/
 nav_title: About
 image: /assets/images/hiking-on-the-guadalupe-river.webp
+description: "Mark Figart is the founder of Digett, a digital marketing agency in the Texas Hill Country. Rotarian, motorcyclist, woodworker, and occasional writer."
 ---
 
 ![](/assets/images/hiking-on-the-guadalupe-river.webp)

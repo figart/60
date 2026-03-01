@@ -3,6 +3,7 @@ layout: post
 title: "Why I'm going back to Ukraine"
 date: 2026-01-28
 image: /assets/images/ukraine/at-city-hall-in-lviv.webp
+description: "Reflections on driving a donated vehicle from England to Ukraine with fellow Rotarians — and why I'm going back to do it again."
 ---
 
 The worst cappuccino I ever had was in Folkestone, England.
