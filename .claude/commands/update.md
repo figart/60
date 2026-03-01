@@ -19,6 +19,7 @@ The user's input will contain:
 
 ### 2. Create the Update File
 
+- **Get the current time**: Run `TZ=America/Chicago date "+%Y-%m-%d-%H%M"` to obtain the current date/time in Chicago time. Use this value for both the filename and the frontmatter `date` field.
 - **Filename**: `_updates/YYYY-MM-DD-HHMM.md` using the current date and time (24-hour format)
   - Example: `_updates/2026-03-01-1435.md`
 - **Frontmatter**:
@@ -67,5 +68,5 @@ All images — regardless of source — are downloaded into the repo and referen
 
 - Do NOT ask unnecessary questions. Use sensible defaults and just create it.
 - If anything is ambiguous, make a reasonable choice.
-- The timezone is always `-0600` (Central Time).
+- All timestamps must be derived using `TZ=America/Chicago date` — never rely on the system default timezone. The offset is `-0600` (Central Standard) or `-0500` (Central Daylight) depending on the time of year.
 - Always use `published: true` unless the user explicitly says "draft".
