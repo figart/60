@@ -12,19 +12,12 @@ $ARGUMENTS
 
 The user's input will contain:
 - **Update text**: The body content for the update (required)
-- **Photos**: Zero or more photos, provided as:
-  - **File paths** on disk (e.g., `~/Photos/sunset.jpg`)
-  - **Direct image URLs** (e.g., `https://example.com/photo.jpg`)
-  - **A Google Photos shared album URL** (e.g., `https://photos.app.goo.gl/...` or `https://photos.google.com/share/...`)
-  - **Explicit embed URLs** prefixed with `embed:` — these should be used as-is in markdown, not downloaded
-- **Captions**: Optional captions for photos, provided inline near each photo reference
+- **Image URLs**: Zero or more image URLs pasted inline (optional). These are embedded directly — not downloaded.
+- **Captions**: Optional captions for images, provided near each URL (e.g., `https://url.com/photo.jpg "Morning light on the river"`)
 
-If a Google Photos album URL is provided:
-1. Fetch the album page HTML using curl
-2. Extract all `lh3.googleusercontent.com` image URLs from the page source using grep/regex
-3. Filter for unique, full-resolution URLs (append `=w2048` to each URL if no size suffix present)
-4. Confirm with the user how many images were found and which to include
-5. Download each selected image
+**Special cases** (laptop/full-network only):
+- **Google Photos shared album URL** (`photos.app.goo.gl/...` or `photos.google.com/share/...`): Fetch the album page, extract `lh3.googleusercontent.com` image URLs, confirm with the user which to include, then download them into the repo. If fetching fails, tell the user to open the album and share individual photo URLs instead.
+- **Local file paths** (e.g., `~/Photos/sunset.jpg`): Copy into the repo's image directory.
 
 ### 2. Create the Update File
 
@@ -41,26 +34,28 @@ If a Google Photos album URL is provided:
   - Timezone is `-0600` (Central Time)
 - **Body**: The update text as markdown. Keep it exactly as the user wrote it, just clean up obvious typos if any.
 
-### 3. Handle Photos
+### 3. Handle Images
 
-**For photos to download** (file paths, URLs, or Google Photos album images):
-- Create a subdirectory: `assets/images/updates/YYYY-MM-DD-HHMM/`
-- Copy or download each photo into that directory
-- Name files using the `.optimize` convention for the GitHub Actions image pipeline:
-  - `photo-1.optimize-1200w.jpg` (or `.png`, matching the original format)
-  - `photo-2.optimize-1200w.jpg`, etc.
-  - If the user provides meaningful names, use those instead of `photo-N`
-- In the markdown body, reference them as:
+**Image URLs** (default — works from phone):
+- Embed directly in the markdown body: `![Caption](https://the-url.com/image.jpg)`
+- Do NOT download these. The image stays hosted externally.
+- If a caption was provided, use it as alt text. Otherwise, generate brief descriptive alt text.
+
+**Google Photos album** (laptop only — requires network access):
+- Fetch the album page HTML using curl
+- Extract all `lh3.googleusercontent.com` image URLs
+- Filter for unique URLs; append `=w2048` if no size suffix is present
+- Confirm with the user how many images were found and which to include
+- Download selected images into `assets/images/updates/YYYY-MM-DD-HHMM/`
+- Name them: `photo-1.optimize-1200w.jpg`, `photo-2.optimize-1200w.jpg`, etc.
+- Reference as `.webp` in markdown (the GitHub Action converts `.optimize` → `.webp`):
   ```markdown
-  ![Caption here](/assets/images/updates/YYYY-MM-DD-HHMM/photo-1.webp)
+  ![Caption](/assets/images/updates/YYYY-MM-DD-HHMM/photo-1.webp)
   ```
-  Note: Reference the `.webp` version (the GitHub Action will convert `.optimize` files to `.webp` and update references automatically)
 
-**For embed URLs** (prefixed with `embed:`):
-- Use the URL directly in the markdown: `![Caption](https://the-url.com/image.jpg)`
-- Do not download these
-
-If photos have captions, use them as alt text. If no caption is provided, generate brief, descriptive alt text.
+**Local file paths** (laptop only):
+- Copy into `assets/images/updates/YYYY-MM-DD-HHMM/` with `.optimize-1200w` naming
+- Reference as `.webp` in markdown (same as above)
 
 ### 4. Create Branch, Commit, Push, and PR
 
@@ -70,7 +65,7 @@ If photos have captions, use them as alt text. If no caption is provided, genera
 4. Push the branch: `git push -u origin update/YYYY-MM-DD-HHMM`
 5. Create a PR to `master` using `gh pr create`:
    - Title: `New update: <first ~8 words of the update text>...`
-   - Body: Preview of the update content and list of included photos
+   - Body: Preview of the update content and list of included images
 
 ### Important Notes
 
