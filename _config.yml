@@ -71,6 +71,7 @@ defaults:
     values:
       layout: update
       image: /assets/images/og-default.webp
+      sitemap: false
 
 # Header navigation pages (commented out to auto-include all pages)
 # header_pages:

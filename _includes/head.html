@@ -10,6 +10,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | relative_url }}">
+  {% if page.collection == "updates" or page.url == "/updates/" %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
   {%- seo -%}
   {%- include structured-data-post.html -%}
   {%- include structured-data-about.html -%}
