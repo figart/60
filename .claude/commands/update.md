@@ -45,7 +45,7 @@ All images — regardless of source — are downloaded into the repo and referen
 ![Caption](/assets/images/updates/YYYY-MM-DD-HHMM/morning-light-on-river.webp)
 ```
 
-**Captions**: Use the user-provided caption as alt text if given. If the image comes from Google Photos and has a description, use that as the caption. Otherwise, leave the alt text empty (e.g., `![](/path/to/image.webp)`).
+**Captions**: Use the user-provided caption as alt text if given. Otherwise, leave the alt text empty (e.g., `![](/path/to/image.webp)`).
 
 **Acquisition by source type**:
 
@@ -54,23 +54,18 @@ All images — regardless of source — are downloaded into the repo and referen
   - Fetch the album page HTML using curl
   - Extract all `lh3.googleusercontent.com` image URLs
   - Filter for unique URLs; append `=w2048` if no size suffix is present
-  - Confirm with the user how many images were found and which to include
-  - Download selected images with `.optimize-1200w.jpg` naming
+  - Download all images with `.optimize-1200w.jpg` naming
 - **Local file path**: `cp` into the destination directory with `.optimize-1200w.{ext}` naming.
 
-### 4. Create Branch, Commit, Push, and PR
+### 4. Commit and Push to Master
 
-1. Create a new branch: `update/YYYY-MM-DD-HHMM` from the current branch
-2. Stage all new files (the update markdown + any downloaded images)
-3. Commit with message: `Add update: YYYY-MM-DD-HHMM`
-4. Push the branch: `git push -u origin update/YYYY-MM-DD-HHMM`
-5. Create a PR to `master` using `gh pr create`:
-   - Title: `New update: <first ~8 words of the update text>...`
-   - Body: Preview of the update content and list of included images
+1. Stage all new files (the update markdown + any downloaded images)
+2. Commit with message: `Add update: YYYY-MM-DD-HHMM`
+3. Push to `origin master`
 
 ### Important Notes
 
 - Do NOT ask unnecessary questions. Use sensible defaults and just create it.
-- If anything is ambiguous, make a reasonable choice and note it in the PR description.
+- If anything is ambiguous, make a reasonable choice.
 - The timezone is always `-0600` (Central Time).
 - Always use `published: true` unless the user explicitly says "draft".
