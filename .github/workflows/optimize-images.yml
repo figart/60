@@ -6,6 +6,7 @@ on:
     paths:
       - 'assets/images/**'
       - '_posts/**'
+      - '_updates/**'
 
 permissions:
   contents: write
@@ -78,6 +79,10 @@ jobs:
 
               # Update _pages/*.md and _pages/*.markdown
               find _pages -type f \( -name "*.md" -o -name "*.markdown" \) -exec \
+                sed -i "s|$old_ref|$new_ref|g" {} \; 2>/dev/null || true
+
+              # Update _updates/*.md and _updates/*.markdown
+              find _updates -type f \( -name "*.md" -o -name "*.markdown" \) -exec \
                 sed -i "s|$old_ref|$new_ref|g" {} \; 2>/dev/null || true
 
               # Update root markdown files
