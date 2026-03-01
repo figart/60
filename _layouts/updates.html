@@ -16,7 +16,7 @@ layout: default
       <li>
         <h3>
           <a class="post-link" href="{{ update.url | relative_url }}">
-            <span class="update-day">{{ update.date | date: "%A" }}</span> {{ update.date | date: "%-d %b %Y" }}
+            <span class="update-day">{{ update.date | date: "%A" }}</span> {{ update.date | date: "%-d %b %Y" }} · {{ update.date | date: "%-I:%M %p" }}
           </a>
         </h3>
         <div class="update-excerpt">{{ update.excerpt }}</div>
