@@ -15,7 +15,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      has_optimize: ${{ steps.check.outputs.has_optimize }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check for unoptimized images
+        id: check
+        run: |
+          if find assets/images -type f -name "*.optimize*.*" 2>/dev/null | grep -q .; then
+            echo "has_optimize=true" >> $GITHUB_OUTPUT
+            echo "Found .optimize images — deferring to optimize-images workflow"
+          else
+            echo "has_optimize=false" >> $GITHUB_OUTPUT
+          fi
+
   build:
+    needs: check
+    if: needs.check.outputs.has_optimize == 'false'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
