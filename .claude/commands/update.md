@@ -12,10 +12,8 @@ $ARGUMENTS
 
 The user's input will contain:
 - **Update text**: The body content for the update (required)
-- **Image URLs**: Zero or more image URLs pasted inline (optional). These are embedded directly — not downloaded.
+- **Image URLs**: Zero or more image URLs pasted inline (optional). These are downloaded into the repo and optimized.
 - **Captions**: Optional captions for images, provided near each URL (e.g., `https://url.com/photo.jpg "Morning light on the river"`)
-
-**Special cases** (laptop/full-network only):
 - **Google Photos shared album URL** (`photos.app.goo.gl/...` or `photos.google.com/share/...`): Fetch the album page, extract `lh3.googleusercontent.com` image URLs, confirm with the user which to include, then download them into the repo. If fetching fails, tell the user to open the album and share individual photo URLs instead.
 - **Local file paths** (e.g., `~/Photos/sunset.jpg`): Copy into the repo's image directory.
 
@@ -36,26 +34,29 @@ The user's input will contain:
 
 ### 3. Handle Images
 
-**Image URLs** (default — works from phone):
-- Embed directly in the markdown body: `![Caption](https://the-url.com/image.jpg)`
-- Do NOT download these. The image stays hosted externally.
-- If a caption was provided, use it as alt text. Otherwise, generate brief descriptive alt text.
+All images — regardless of source — are downloaded into the repo and referenced as `.webp`. The GitHub Actions workflow (`.github/workflows/optimize-images.yml`) converts `.optimize-1200w` files to optimized `.webp` on push.
 
-**Google Photos album** (laptop only — requires network access):
-- Fetch the album page HTML using curl
-- Extract all `lh3.googleusercontent.com` image URLs
-- Filter for unique URLs; append `=w2048` if no size suffix is present
-- Confirm with the user how many images were found and which to include
-- Download selected images into `assets/images/updates/YYYY-MM-DD-HHMM/`
-- Name them: `photo-1.optimize-1200w.jpg`, `photo-2.optimize-1200w.jpg`, etc.
-- Reference as `.webp` in markdown (the GitHub Action converts `.optimize` → `.webp`):
-  ```markdown
-  ![Caption](/assets/images/updates/YYYY-MM-DD-HHMM/photo-1.webp)
-  ```
+**Destination directory**: `assets/images/updates/YYYY-MM-DD-HHMM/`
 
-**Local file paths** (laptop only):
-- Copy into `assets/images/updates/YYYY-MM-DD-HHMM/` with `.optimize-1200w` naming
-- Reference as `.webp` in markdown (same as above)
+**Naming**: Use a slugified version of the original filename when meaningful (e.g., `morning-light-on-river.optimize-1200w.jpg`). Fall back to `photo-1`, `photo-2`, etc. when the URL filename is opaque (hashes, UUIDs, query-string-only URLs).
+
+**Markdown reference**: Always reference the `.webp` version:
+```markdown
+![Caption](/assets/images/updates/YYYY-MM-DD-HHMM/morning-light-on-river.webp)
+```
+
+**Captions**: Use the user-provided caption as alt text if given. Otherwise, generate brief descriptive alt text.
+
+**Acquisition by source type**:
+
+- **Single image URL**: Download with `curl -L -o` into the destination directory with `.optimize-1200w.{ext}` naming.
+- **Google Photos album** (`photos.app.goo.gl/...` or `photos.google.com/share/...`):
+  - Fetch the album page HTML using curl
+  - Extract all `lh3.googleusercontent.com` image URLs
+  - Filter for unique URLs; append `=w2048` if no size suffix is present
+  - Confirm with the user how many images were found and which to include
+  - Download selected images with `.optimize-1200w.jpg` naming
+- **Local file path**: `cp` into the destination directory with `.optimize-1200w.{ext}` naming.
 
 ### 4. Create Branch, Commit, Push, and PR
 
