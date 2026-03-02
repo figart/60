@@ -27,10 +27,12 @@ The user's input will contain:
   ---
   date: YYYY-MM-DD HH:MM:00 -0600
   published: true
+  image: /assets/images/updates/YYYY-MM-DD-HHMM/first-image.webp
   ---
   ```
   - Use the current date/time
   - Timezone is `-0600` (Central Time)
+  - Set `image:` to the path of the first image in the update. If the update has no images, omit the `image:` key entirely (it will fall back to `og-default.webp`).
 - **Body**: The update text as markdown. Keep it exactly as the user wrote it, just clean up obvious typos if any.
 
 ### 3. Handle Images
