@@ -868,7 +868,7 @@
     <script>
       (function() {
         var host = window.location.hostname;
-        document.querySelectorAll('.post-content a[href]').forEach(function(a) {
+        document.querySelectorAll('.post-content a[href], .update-excerpt a[href]').forEach(function(a) {
           if (a.hostname && a.hostname !== host) {
             a.setAttribute('target', '_blank');
             a.setAttribute('rel', 'noopener');

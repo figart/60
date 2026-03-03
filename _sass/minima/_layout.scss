@@ -937,7 +937,8 @@
   }
 }
 
-.post-content a[target="_blank"]::after {
+.post-content a[target="_blank"]::after,
+.update-excerpt a[target="_blank"]::after {
   content: "\2197";
   font-size: 0.7em;
   margin-left: 0.15em;
