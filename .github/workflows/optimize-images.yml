@@ -18,7 +18,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      has_optimize: ${{ steps.find.outputs.has_optimize }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for .optimize files
+        id: find
+        run: |
+          if find assets/images -type f -name "*.optimize*.*" 2>/dev/null | grep -q .; then
+            echo "has_optimize=true" >> $GITHUB_OUTPUT
+            echo "Found .optimize files to process"
+          else
+            echo "has_optimize=false" >> $GITHUB_OUTPUT
+            echo "No .optimize files found — skipping optimize pipeline"
+          fi
+
   optimize:
+    needs: check
+    if: needs.check.outputs.has_optimize == 'true'
     runs-on: ubuntu-latest
     outputs:
       changes_made: ${{ steps.process.outputs.changes_made }}
@@ -129,7 +150,7 @@ jobs:
           fi
 
   build:
-    needs: optimize
+    needs: [check, optimize]
     if: needs.optimize.outputs.changes_made == 'true'
     runs-on: ubuntu-latest
     steps:
