@@ -937,6 +937,13 @@
   }
 }
 
+.post-content a[target="_blank"]::after {
+  content: "\2197";
+  font-size: 0.7em;
+  margin-left: 0.15em;
+  vertical-align: super;
+}
+
 
 
 /**
