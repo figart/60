@@ -90,8 +90,8 @@
         paragraphs.forEach(function(p) {
           var imgs = p.querySelectorAll('img');
 
-          // Single or double images: convert to figure with caption
-          if (imgs.length === 1 || imgs.length === 2) {
+          // Single image: convert to figure with caption
+          if (imgs.length === 1) {
             var container = document.createDocumentFragment();
             imgs.forEach(function(img) {
               var fig = createFigure(img, false);
@@ -102,8 +102,8 @@
             p.parentNode.insertBefore(container, p);
             p.remove();
           }
-          // 3+ images: convert to carousel
-          else if (imgs.length >= 3) {
+          // 2+ images: convert to carousel
+          else if (imgs.length >= 2) {
             var splide = document.createElement('div');
             splide.className = 'splide gallery-carousel';
             splide.id = 'carousel-' + carouselIndex;
