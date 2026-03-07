@@ -14,12 +14,12 @@ layout: default
     <ul class="post-list">
       {%- for update in updates -%}
       <li>
-        <h3>
-          <a class="post-link" href="{{ update.url | relative_url }}">
+        <a class="post-link" href="{{ update.url | relative_url }}">
+          <h3>
             <span class="update-day">{{ update.date | date: "%A" }}</span> {{ update.date | date: "%-d %b %Y" }} · {{ update.date | date: "%-I:%M %p" }}
-          </a>
-        </h3>
-        <div class="update-excerpt">{{ update.excerpt }}</div>
+          </h3>
+          <div class="update-excerpt">{{ update.excerpt | strip_html | truncatewords: 50 }}</div>
+        </a>
       </li>
       {%- endfor -%}
     </ul>
