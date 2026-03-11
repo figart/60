@@ -334,6 +334,12 @@
       width: 100%;
       aspect-ratio: 16 / 9;
       border: none;
+
+      &.youtube-short {
+        aspect-ratio: 9 / 16;
+        max-width: 315px;
+        margin: 0 auto;
+      }
     }
 
     figcaption {
@@ -687,6 +693,13 @@
       max-width: 1200px;
       max-height: 675px;
       border: none;
+
+      &.youtube-short {
+        width: auto;
+        height: 80vh;
+        max-height: 80vh;
+        aspect-ratio: 9 / 16;
+      }
     }
   }
 

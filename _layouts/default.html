@@ -44,14 +44,16 @@
         if (!content) return;
 
         // Helper: create media element (img or YouTube iframe)
-        // Syntax: ![caption](#youtube:VIDEO_ID)
+        // Syntax: ![caption](#youtube:VIDEO_ID) or ![caption](#youtube-short:VIDEO_ID)
         function createMediaElement(img) {
           var src = (img.getAttribute('src') || '').trim();
-          var youtubeMatch = src.match(/^#youtube:([a-zA-Z0-9_-]+)/);
+          var youtubeMatch = src.match(/^#youtube(-short)?:([a-zA-Z0-9_-]+)/);
 
           if (youtubeMatch) {
+            var isShort = !!youtubeMatch[1];
             var iframe = document.createElement('iframe');
-            iframe.src = 'https://www.youtube.com/embed/' + youtubeMatch[1] + '?enablejsapi=1';
+            iframe.src = 'https://www.youtube.com/embed/' + youtubeMatch[2] + '?enablejsapi=1';
+            if (isShort) iframe.classList.add('youtube-short');
             iframe.setAttribute('frameborder', '0');
             iframe.setAttribute('allowfullscreen', '');
             iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
@@ -463,6 +465,7 @@
             iframe.setAttribute('frameborder', '0');
             iframe.setAttribute('allowfullscreen', '');
             iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            if (item.isShort) iframe.classList.add('youtube-short');
             mediaContainer.appendChild(iframe);
             showCaption(item.alt, iframe);
           }
@@ -533,8 +536,8 @@
                 var caption = figcaption ? figcaption.textContent : '';
                 // Check for iframe first, or if img has #youtube: src treat as video
                 if (slideIframe) {
-                  galleryItems.push({ type: 'video', src: slideIframe.src, alt: caption });
-                } else if (slideImg && !slideImg.src.match(/#youtube:/)) {
+                  galleryItems.push({ type: 'video', src: slideIframe.src, alt: caption, isShort: slideIframe.classList.contains('youtube-short') });
+                } else if (slideImg && !slideImg.src.match(/#youtube(-short)?:/)) {
                   galleryItems.push({ type: 'image', src: slideImg.src, alt: slideImg.alt || caption });
                 }
               });
@@ -639,8 +642,8 @@
               var figcaption = slide.querySelector('figcaption');
               var caption = figcaption ? figcaption.textContent : '';
               if (slideIframe) {
-                galleryItems.push({ type: 'video', src: slideIframe.src, alt: caption });
-              } else if (slideImg && !slideImg.src.match(/#youtube:/)) {
+                galleryItems.push({ type: 'video', src: slideIframe.src, alt: caption, isShort: slideIframe.classList.contains('youtube-short') });
+              } else if (slideImg && !slideImg.src.match(/#youtube(-short)?:/)) {
                 galleryItems.push({ type: 'image', src: slideImg.src, alt: slideImg.alt || caption });
               }
             });
