@@ -58,6 +58,7 @@ All images — regardless of source — are downloaded into the repo and referen
   - Extract all `lh3.googleusercontent.com` image URLs
   - Filter for unique URLs; append `=w2048` if no size suffix is present
   - Download all images with `.optimize-1200w.jpg` naming
+  - After downloading, read each image's EXIF metadata (e.g., using `exiftool` or `mdls`) to get the capture datetime, then sort the images in ascending order (earliest first). Use this sort order when numbering (`photo-1`, `photo-2`, etc.) and when placing them in the update markdown.
 - **Local file path**: `cp` into the destination directory with `.optimize-1200w.{ext}` naming.
 
 ### 4. Commit and Push to Master
