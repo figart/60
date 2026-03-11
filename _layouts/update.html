@@ -19,3 +19,34 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{%- assign published_updates = site.updates | where: "published", true | sort: "date" -%}
+{%- assign prev_update = nil -%}
+{%- assign next_update = nil -%}
+{%- assign found = false -%}
+{%- for update in published_updates -%}
+  {%- if found -%}
+    {%- assign next_update = update -%}
+    {%- break -%}
+  {%- endif -%}
+  {%- if update.url == page.url -%}
+    {%- assign found = true -%}
+  {%- else -%}
+    {%- assign prev_update = update -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<nav class="post-navigation" aria-label="Update navigation">
+  {%- if prev_update -%}
+    <a class="post-navigation__link post-navigation__link--prev" href="{{ prev_update.url | relative_url }}">
+      <span class="post-navigation__label">&larr; Previous</span>
+      <span class="post-navigation__title">{{ prev_update.date | date: "%-d %b %Y" }}</span>
+    </a>
+  {%- endif -%}
+  {%- if next_update -%}
+    <a class="post-navigation__link post-navigation__link--next" href="{{ next_update.url | relative_url }}">
+      <span class="post-navigation__label">Next &rarr;</span>
+      <span class="post-navigation__title">{{ next_update.date | date: "%-d %b %Y" }}</span>
+    </a>
+  {%- endif -%}
+</nav>
