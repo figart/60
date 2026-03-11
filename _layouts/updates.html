@@ -9,7 +9,7 @@ layout: default
 
   {{ content }}
 
-  {%- assign updates = site.updates | sort: "date" | reverse -%}
+  {%- assign updates = site.updates | where: "published", true | sort: "date" | reverse -%}
   {%- if updates.size > 0 -%}
     <ul class="post-list">
       {%- for update in updates -%}

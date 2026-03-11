@@ -19,19 +19,19 @@ The user's input will contain:
 
 ### 2. Create the Update File
 
-- **Get the current time**: Run `TZ=America/Chicago date "+%Y-%m-%d-%H%M"` to obtain the current date/time in Chicago time. Use this value for both the filename and the frontmatter `date` field.
+- **Get the current time**: Run `TZ=America/Chicago date "+%Y-%m-%d-%H%M"` to obtain the current date/time in Chicago time. Use this value for both the filename and the frontmatter `date` field. Also run `TZ=America/Chicago date "+%z"` to get the current UTC offset (e.g., `-0500` during CDT or `-0600` during CST).
 - **Filename**: `_updates/YYYY-MM-DD-HHMM.md` using the current date and time (24-hour format)
   - Example: `_updates/2026-03-01-1435.md`
 - **Frontmatter**:
   ```yaml
   ---
-  date: YYYY-MM-DD HH:MM:00 -0600
+  date: YYYY-MM-DD HH:MM:00 <offset>
   published: true
   image: /assets/images/updates/YYYY-MM-DD-HHMM/first-image.webp
   ---
   ```
   - Use the current date/time
-  - Timezone is `-0600` (Central Time)
+  - Use the UTC offset obtained from the `date "+%z"` command
   - Set `image:` to the path of the first image in the update. If the update has no images, omit the `image:` key entirely (it will fall back to `og-default.webp`).
 - **Body**: The update text as markdown. Keep it exactly as the user wrote it, just clean up obvious typos if any.
 
@@ -72,5 +72,5 @@ All images — regardless of source — are downloaded into the repo and referen
 - Do NOT ask unnecessary questions. Use sensible defaults and just create it.
 - If anything is ambiguous, make a reasonable choice.
 - Minimize the number of Bash tool calls to reduce permission prompts. Chain related shell commands together with `&&` (e.g., `mkdir -p dir && curl ... && curl ...`). Combine the git pull, add, commit, and push into a single Bash call.
-- All timestamps must be derived using `TZ=America/Chicago date` — never rely on the system default timezone. The offset is `-0600` (Central Standard) or `-0500` (Central Daylight) depending on the time of year.
+- All timestamps must be derived using `TZ=America/Chicago date` — never rely on the system default timezone. The UTC offset must be obtained dynamically via `date "+%z"`.
 - Always use `published: true` unless the user explicitly says "draft".
