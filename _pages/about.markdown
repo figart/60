@@ -29,7 +29,7 @@ In February of 2026 I was still struggling with what I wanted my business to be.
 
 At the same time I was getting super curious about what I was seeing happening under my nose regarding AI's ability to write code. It had been more than 20 years since I'd done any meaningful programming. But I had this inspiration in the form of the newly-electrified light bulb in my head, I thought I'd try my hand at harnessing my newfound inspiration *and* this mysterious software called Claude Code to try and build a new website for Digett.
 
-So I did. Little could I have expected the empowerment I found in a "partner" who could write code so fast and who could understand my instructions well enough to churn out one of the favorite websites I've ever authored, all in a week's time. I wanted to learn more, and I've been sitting down with AI for hours on end ever since that first week we coded together. Learning, building, solving problems. I'm the most engaged with my work that I've been in 20 years.
+So I did. Little could I have expected the empowerment I found in a "partner" who could write code so fast and who could understand my instructions well enough to churn out one of the favorite websites I've ever authored, all in a week's time. I wanted to learn more, and I've been sitting down with AI for hours on end ever since that first week we coded together. Learning, building, solving problems. I'm the most engaged with my work that I've been in 20 years. I'm taking this empowerment to mission-driven organizations so they can experience it, too.
 
 ## Beyond the Day Job
 
