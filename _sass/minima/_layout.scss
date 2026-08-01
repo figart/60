@@ -539,7 +539,8 @@
 
   h3 {
     @include relative-font-size(1.625);
-    margin-bottom: 0.5rem;
+    margin-top: 1.625rem;
+    margin-bottom: 0.25rem;
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.375);
