@@ -39,7 +39,7 @@ In March 2025, I joined a convoy of Rotary volunteers who drive vehicles purchas
 
 A month later, I rode a motorcycle across Mexico with a group of friends. I'd rather be uncomfortable and alive than comfortable and bored.
 
-In March of this year, 2026, I went back to Ukraine, and had another birthday in Poland. Again we drove vehicles to Lviv for dropoff. These experiences are indescribably fulfilling, which may be why some of the drivers, many of whom are English, have done this well north of fifty times.
+In March of this year, 2026, I went back to Ukraine, and had another birthday in Poland. Again we drove vehicles to Lviv for dropoff. These experiences are indescribably fulfilling, which may be why some of the drivers, many of whom are English, have done this well north of fifty times. I hope to return.
 
 ## What I Care About
 
@@ -47,7 +47,7 @@ I keep coming back to a phrase I picked up somewhere in childhood: _Leave things
 
 I'm drawn to simplicity, though I don't always achieve it. I meditate, inconsistently. I run trails, I make sawdust in my shop and occasionally turn it into furniture, and I noodle on my guitar sporadically. I've always wanted to write a song, but as of yet, have little to show for that aspiration.
 
-I believe that what we experience matters infinitely more than what we accumulate, that a screened-in porch is one of the best investments a person can make, and that the best way to figure out what you think is to write it down.
+I believe that what we experience matters infinitely more than what we accumulate, that a screened-in porch is [one of the best investments]({% post_url 2024-02-13-a-case-for-the-humble-screened-in-porch %}) a person can make, and that the best way to figure out what you think is to write it down.
 
 ## Get in Touch
 
