@@ -31,7 +31,7 @@ At the same time I was getting super curious about what I was seeing happening u
 
 So I did. Little could I have expected the empowerment I found in a "partner" who could write code so fast and who could understand my instructions well enough to churn out one of the favorite websites I've ever authored, all in a week's time. I wanted to learn more, and I've been sitting down with AI for hours on end ever since that first week we coded together. Learning, building, solving problems. I'm the most engaged with my work that I've been in 20 years. I'm taking this empowerment to mission-driven organizations so they can experience it, too.
 
-## Beyond the Day Job
+### Beyond the Day Job
 
 I'm a member of the Rotary Club of San Antonio and was honored to be named [Rotarian of the Year](https://www.rotarysa.org/news/rotary-club-of-san-antonio-honors-four-members-at-annual-awards-presentation){:target="_blank"} for the 2024–2025 Rotary year. Rotary has been a grounding force—a reminder that service can be both effective _and_ a lot of fun.
 
@@ -41,7 +41,7 @@ A month later, I rode a motorcycle across Mexico with a group of friends. I'd ra
 
 In March of this year, 2026, I went back to Ukraine, and had another birthday in Poland. Again we drove vehicles to Lviv for dropoff. These experiences are indescribably fulfilling, which may be why some of the drivers, many of whom are English, have done this well north of fifty times. I hope to return.
 
-## What I Care About
+### What I Care About
 
 I keep coming back to a phrase I picked up somewhere in childhood: _Leave things better than you found them._ It's become a kind of operating principle—for client work, for relationships, for the land I live on.
 
