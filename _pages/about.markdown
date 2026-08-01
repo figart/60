@@ -56,7 +56,3 @@ If you want to talk about AI, marketing, business, Ukraine, motorcycling, woodwo
 - [Send me an email](#){:.contact-link}
 - **LinkedIn:** [linkedin.com/in/figart](https://www.linkedin.com/in/figart/){:target="\_blank"}
 - **Digett:** [digett.com](https://www.digett.com){:target="\_blank"}
-
-### For my fellow geeks
-
-You may have already figured out that I use Jekyll for this website. I'm using the base Jekyll theme, highly modified. If you have any questions about what I've done or how I've done it, please feel free to reach out. I'm happy to share.
