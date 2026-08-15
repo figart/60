@@ -3,7 +3,13 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {%- comment -%}
+      On the home page the identity h1 already says Mark Figart, so omit the
+      header title there to avoid the duplicate. Keep it on other pages as the home link.
+    {%- endcomment -%}
+    {%- unless page.layout == "home" -%}
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {%- endunless -%}
 
     {%- if page_paths -%}
       <nav class="site-nav">
