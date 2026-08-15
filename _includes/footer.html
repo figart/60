@@ -2,8 +2,13 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-    <p class="footer-description">{{- site.description | escape -}}</p>
-    <p class="footer-rss">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <p class="footer-links">
+      <a href="https://www.linkedin.com/in/figart/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="footer-links__sep" aria-hidden="true"> · </span>
+      <a href="https://www.digett.com" target="_blank" rel="noopener">Digett</a>
+      <span class="footer-links__sep" aria-hidden="true"> · </span>
+      <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+    </p>
   </div>
 
 </footer>

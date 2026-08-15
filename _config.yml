@@ -20,8 +20,8 @@
 
 title: Mark Figart
 email: mark.figart@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  After all these years, still trying to find my voice.
+description: >-
+  Mark Figart — software engineer, founder of Digett, U.S. Army veteran, Rotarian. He writes, speaks, and delivers aid vehicles from London to Ukraine.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.markfigart.com" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: America/Chicago
@@ -74,9 +74,10 @@ defaults:
       image: /assets/images/og-default.webp
       sitemap: false
 
-# Header navigation pages (commented out to auto-include all pages)
-# header_pages:
-#   - _pages/about.markdown
+# Header navigation pages
+header_pages:
+  - _pages/about.markdown
+  - _pages/ukraine.md
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

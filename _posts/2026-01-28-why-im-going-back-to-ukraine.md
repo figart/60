@@ -2,17 +2,17 @@
 layout: post
 title: "Why I'm going back to Ukraine"
 date: 2026-01-28
-image: /assets/images/ukraine/at-city-hall-in-lviv.webp
+image: /assets/images/ukraine/convoy-moves-toward-lviv.webp
 description: "Reflections on driving a donated vehicle from England to Ukraine with fellow Rotarians — and why I'm going back to do it again."
 ---
+
+<aside class="callout" markdown="1">
+This trip happened in March 2026. For where the work stands now, and a way to give toward a hoped-for return in spring 2027, see [Ukraine](/ukraine/).
+</aside>
 
 The worst cappuccino I ever had was in Folkestone, England.
 
 Folkestone is a coastal town where, eighty years earlier, tens of thousands of soldiers walked down the very same street on which I stood on their way down to the Channel. They were headed to war. Leaving a half-finished cappuccino behind, I was headed to catch a ferry, along with a used ambulance and a cough I couldn't shake—not exactly the same stakes, but I'd like to think we shared a certain grim determination.
-
-<aside class="callout" markdown="1">
-TL;DR: I'd love for you to read my reflections here and view the photos and videos from my trip last year, but I also know you're busy. In short, I'm raising cash to buy a used vehicle in England. I'll drive it to Ukraine where they desperately need it for rescue and defense. If you're willing to help me, you can make a tax-deductible contribution [here](https://www.rotarysa.org/initiatives/ukraine-relief){:target="_blank"}, through my Rotary Club's foundation. If you like I'll keep you posted along my journey. Thank you, thank you. 🙏
-</aside>
 
 My 60th birthday arrived at midnight just after crossing the Channel, and my comrades helped celebrate the occasion by singing happy birthday to me at an Esso roadside fuel station just up the coast from Dunkirk. Standing under fluorescent lights, surrounded by a cheerful bunch of Brits, I might have imagined something different—a nice dinner, maybe, or a cake from somewhere other than a gas station—but honestly, it was perfect.
 

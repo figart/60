@@ -3,20 +3,14 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  {%- include home-identity.html -%}
+  {%- include home-ukraine.html -%}
+  {%- include home-speaking.html -%}
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    {%- if page.list_title -%}
-      {%- if page.list_title != "" -%}
-        <h2 class="post-list-heading">{{ page.list_title }}</h2>
-      {%- endif -%}
-    {%- else -%}
-      <h2 class="post-list-heading">Posts</h2>
-    {%- endif -%}
+    <h2 class="post-list-heading">Writing</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
