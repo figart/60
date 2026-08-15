@@ -40,7 +40,7 @@ At these checkpoints the noise drops away. You stop talking and just wait. The m
 
 And part of it is that being in a country at war felt strangely more coherent than home.
 
-Not that I was dodging missiles. We may have heard a drone or two, and we clearly saw numerous signs of destruction, cemeteries lined with flags marking the graves of fallen soldiears. But the front lines were a hundred miles east of where I dared venture. What I mean is that in Ukraine, people know what they're fighting for. There's clarity, a purpose, a shared understanding that something precious is at stake and worth defending. The enemy is external and it's obvious.
+Not that I was dodging missiles. We may have heard a drone or two, and we clearly saw numerous signs of destruction, cemeteries lined with flags marking the graves of fallen soldiers. But the front lines were a hundred miles east of where I dared venture. What I mean is that in Ukraine, people know what they're fighting for. There's clarity, a purpose, a shared understanding that something precious is at stake and worth defending. The enemy is external and it's obvious.
 
 Back home, I'm not sure many of us realize we're also in a fight, or what we're defending if we do realize it. When I read the news—an activity on which I've had to cut back for my own mental health—I feel something between grief and nausea. I don't lecture on politics, as people believe what they believe, and I have no business pretending I'm wiser or better than my neighbor. But let's just say the divide between what we _say_ we value and how we treat each other feels wider than it used to. For me, being in Ukraine, surrounded by people who've had everything upended and yet who are still building, still helping, even still laughing—it made me feel less alone in my discomfort regarding my own homeland.
 
@@ -63,7 +63,7 @@ I don't know if I'll do this every year. I don't know if the war will still be g
 ![Some of the crew hanging out in Lviv.](/assets/images/ukraine/some-of-the-crew-in-lviv.webp)
 ![The ambulance with which I became good friends.](/assets/images/ukraine/the-ambulance.webp)
 ![Lviv soldier mural. Murals of this nature are found throughout Ukraine. This one says "I will wait. I will wait both day and night. I will wait forever, for the sake of your return.](/assets/images/ukraine/lviv-soldier-mural.webp)
-![Lviv cemetery. The cemetaries in most towns are easily spotted becaue of these flags. In larger cities like Lviv there are rows and rows of them.](/assets/images/ukraine/lviv-cemetary.webp)
+![Lviv cemetery. The cemeteries in most towns are easily spotted because of these flags. In larger cities like Lviv there are rows and rows of them.](/assets/images/ukraine/lviv-cemetary.webp)
 ![At city hall in Lviv. There's sadness in knowing so much architecture across Ukraine—similar in its grandeur and importance—is being destroyed.](/assets/images/ukraine/at-city-hall-in-lviv.webp)
 ![Funeral procession, Lviv. These funerals can occur once or twice a day at the same church. This one involved three fallen soldiers and their families, along with a large crowd of townspeople. A more solemn occasion I've never witnessed.](/assets/images/ukraine/funeral-procession-lviv.webp)
 ![Mourning families at funeral](/assets/images/ukraine/mourning-families-at-funeral.webp)
