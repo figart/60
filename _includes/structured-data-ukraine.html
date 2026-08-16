@@ -1,0 +1,65 @@
+{%- if page.permalink == "/ukraine/" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DonateAction",
+  "name": "Give through Rotary",
+  "description": {{ page.description | jsonify }},
+  "target": {
+    "@type": "EntryPoint",
+    "urlTemplate": "https://www.rotarysa.org/initiatives/ukraine-relief",
+    "actionPlatform": [
+      "http://schema.org/DesktopWebPlatform",
+      "http://schema.org/MobileWebPlatform"
+    ]
+  },
+  "recipient": {
+    "@type": "Organization",
+    "name": "Rotary Club of San Antonio",
+    "url": "https://www.rotarysa.org/"
+  },
+  "agent": {
+    "@type": "Person",
+    "@id": "{{ site.author.url }}#person",
+    "name": {{ site.author.name | jsonify }}
+  },
+  "object": {
+    "@type": "WebPage",
+    "url": {{ page.url | absolute_url | jsonify }},
+    "name": {{ page.title | jsonify }},
+    "about": {
+      "@type": "Thing",
+      "name": "Ukraine vehicle relief convoy",
+      "description": "Rotary volunteers buy, repair, and drive donated vehicles from the UK to Lviv, Ukraine."
+    }
+  }
+}
+</script>
+
+{%- if page.gallery -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": {{ page.title | append: " photographs" | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.author.url }}#person",
+    "name": {{ site.author.name | jsonify }}
+  },
+  "associatedMedia": [
+    {%- for image in page.gallery -%}
+    {
+      "@type": "ImageObject",
+      "contentUrl": {{ image | absolute_url | jsonify }},
+      "url": {{ image | absolute_url | jsonify }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+{%- include structured-data-breadcrumbs.html current_name="Ukraine" -%}
+{%- endif -%}

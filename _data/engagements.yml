@@ -1,0 +1,27 @@
+# Speaking engagements shown on the homepage and in Event JSON-LD.
+# Only entries with a full YYYY-MM-DD `date` are emitted as schema.org Event.
+# Use `date_display` for the visible label; omit or leave `date` blank for TBD.
+
+- date: "2026-09-02"
+  date_display: "September 2, 2026"
+  where: "Rotary Club of San Antonio"
+  what: "Corrymeela and the Nurturing Hope Summer Learning Journey"
+  locality: "San Antonio"
+  region: "TX"
+  country: "US"
+
+- date_display: "September 2026, date to be announced"
+  datetime: "2026-09"
+  where: "Rotary Club of Corpus Christi"
+  what: "AI — what it can do, and how to start"
+  locality: "Corpus Christi"
+  region: "TX"
+  country: "US"
+
+- date: "2026-09-09"
+  date_display: "September 9, 2026"
+  where: "St. Mary’s University, Department of International Studies and Global Affairs"
+  what: "Panel on peace studies and community engagement"
+  locality: "San Antonio"
+  region: "TX"
+  country: "US"

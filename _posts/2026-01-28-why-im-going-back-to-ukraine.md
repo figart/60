@@ -4,6 +4,23 @@ title: "Why I'm going back to Ukraine"
 date: 2026-01-28
 image: /assets/images/ukraine/convoy-moves-toward-lviv.webp
 description: "Reflections on driving a donated vehicle from England to Ukraine with fellow Rotarians — and why I'm going back to do it again."
+gallery:
+  - /assets/images/ukraine/highway-north-of-dunkirk.webp
+  - /assets/images/ukraine/convoy-moves-toward-lviv.webp
+  - /assets/images/ukraine/waiting-for-the-ferry.webp
+  - /assets/images/ukraine/ukraine-american-flag.webp
+  - /assets/images/ukraine/prestons-eleven.webp
+  - /assets/images/ukraine/some-of-the-crew-in-lviv.webp
+  - /assets/images/ukraine/the-ambulance.webp
+  - /assets/images/ukraine/lviv-soldier-mural.webp
+  - /assets/images/ukraine/lviv-cemetary.webp
+  - /assets/images/ukraine/at-city-hall-in-lviv.webp
+  - /assets/images/ukraine/funeral-procession-lviv.webp
+  - /assets/images/ukraine/mourning-families-at-funeral.webp
+  - /assets/images/ukraine/fallen-soldier-carried-by-comrades.webp
+  - /assets/images/ukraine/handing-off-two-vehicles.webp
+  - /assets/images/ukraine/on-the-road-toward-ukraine.webp
+  - /assets/images/ukraine/memorial-posters-in-lviv.webp
 ---
 
 <aside class="callout" markdown="1">

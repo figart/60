@@ -1276,11 +1276,16 @@
 }
 
 .identity__photo-wrap {
+  display: block;
   width: 8.5rem;
   height: 8.5rem;
+  padding: 0;
+  border: none;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
+  background: transparent;
+  cursor: zoom-in;
 }
 
 .identity__photo {
@@ -1289,6 +1294,7 @@
   object-fit: cover;
   object-position: 50% 20%;
   transform: scale(1.06) translateX(-4%);
+  pointer-events: none;
 }
 
 .identity__name {

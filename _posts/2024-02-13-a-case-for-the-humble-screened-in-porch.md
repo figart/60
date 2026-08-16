@@ -4,6 +4,18 @@ title: "A Case for the Humble Screened-In Porch"
 date: 2024-02-13
 image: /assets/images/screened-in-porch/morning-sun-on-the-screen.webp
 description: "How rebuilding a rotting porch on my Texas Hill Country property changed the way I experience the land — and why a screened-in porch might be one of the best investments you can make."
+gallery:
+  - /assets/images/screened-in-porch/old-porch-demolition.webp
+  - /assets/images/screened-in-porch/new-porch-taking-shape.webp
+  - /assets/images/screened-in-porch/extended-family-on-the-porch.webp
+  - /assets/images/screened-in-porch/hazel-and-claudia-morning-ritual.webp
+  - /assets/images/screened-in-porch/looking-onto-porch-at-night.webp
+  - /assets/images/screened-in-porch/girls-waiting-to-go-out.webp
+  - /assets/images/screened-in-porch/great-place-to-work.webp
+  - /assets/images/screened-in-porch/morning-cup-and-sunshine.webp
+  - /assets/images/screened-in-porch/morning-sun-on-the-screen.webp
+  - /assets/images/screened-in-porch/porch-and-the-snow.webp
+  - /assets/images/screened-in-porch/porch-from-the-outside.webp
 ---
 
 When I bought my house, the porch was rotting. The floor sagged, and the "cover" (I couldn't call it a roof) was giving up. It was one of those features that showed up in the listing photos from an angle that tried to hide the decay. I didn't think much about it, as I had bigger problems to solve at the time.

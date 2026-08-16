@@ -1,22 +1,6 @@
 {%- if page.permalink == "/about/" -%}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": {{ site.author.name | jsonify }},
-  "url": "{{ site.author.url }}",
-  "image": "{{ site.url }}{{ page.image }}",
-  "jobTitle": "Software engineer and founder",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Texas A&M University"
-  },
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Digett",
-    "url": "https://www.digett.com"
-  },
-  "sameAs": {{ site.social.links | jsonify }}
-}
+{% include structured-data-person-object.html %}
 </script>
+{%- include structured-data-breadcrumbs.html current_name="About" -%}
 {%- endif -%}

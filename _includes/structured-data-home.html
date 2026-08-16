@@ -1,0 +1,75 @@
+{%- if page.layout == "home" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": {{ "/" | absolute_url | append: "#profilepage" | jsonify }},
+  "url": {{ "/" | absolute_url | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "mainEntity": {% include structured-data-person-object.html %}
+}
+</script>
+
+{%- if site.posts.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Writing",
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "numberOfItems": {{ site.posts.size }},
+  "itemListElement": [
+    {%- for post in site.posts -%}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": {{ post.url | absolute_url | jsonify }},
+      "name": {{ post.title | jsonify }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+{%- assign schema_engagements = site.data.engagements | where_exp: "e", "e.date" -%}
+{%- if schema_engagements.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {%- for event in schema_engagements -%}
+    {
+      "@type": "Event",
+      "name": {{ event.what | jsonify }},
+      "description": {{ event.what | append: " — " | append: event.where | jsonify }},
+      "startDate": {{ event.date | jsonify }},
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": {{ event.where | jsonify }},
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": {{ event.locality | jsonify }},
+          "addressRegion": {{ event.region | jsonify }},
+          "addressCountry": {{ event.country | jsonify }}
+        }
+      },
+      "performer": {
+        "@type": "Person",
+        "@id": "{{ site.author.url }}#person",
+        "name": {{ site.author.name | jsonify }}
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": {{ event.where | jsonify }}
+      }
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+{%- endif -%}

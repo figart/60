@@ -13,7 +13,7 @@ description: "Mark Figart is a software engineer, founder of Digett, U.S. Army v
 
 I'm a software engineer and the founder of [Digett](https://www.digett.com){:target="\_blank"}, a digital agency I started in 2001. We help organizations build systems that attract advocates, earn loyalty, and create lasting value — including mission-driven organizations that serve other people. I live in the Texas Hill Country with my wife Claudia and more dogs than I'd originally planned for.
 
-When I'm not working, I'm likely on my screened-in porch, in my shop, on a trail somewhere on foot or motorcycle, or planning a trip.
+When I'm not working, I'm likely on my screened-in porch, in my shop, on a trail somewhere on foot or motorcycle. And if I'm lucky I'm also planning my next adventure.
 
 ## The Longer Version
 
@@ -23,7 +23,7 @@ I started my professional career in the early '90s as a technical writer, moved 
 
 Along the way I became convinced that most marketing is broken — not because people don't try hard enough, but because they build on weak foundations. Digett exists to do better than that, one client at a time.
 
-I write software. I use AI as a working partner on real builds — sites, tools, systems — and I take that craft to organizations that help others, so the work compounds. Rotary showed me how much further service reaches when you put skill behind an institution that is already in the room. Digett is pointed at that intersection: digital work for mission-driven organizations.
+I write software. I use AI as a working partner on real builds — sites, tools, systems — and I take that craft to organizations that help others, so the impact of the work I do gets leveraged. Rotary showed me how much further service reaches when you put skill behind an institution that is already in the room. Digett is pointed at that intersection: digital work for mission-driven organizations.
 
 ### Rotary and Ukraine
 

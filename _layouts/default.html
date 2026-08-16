@@ -716,6 +716,81 @@
     </script>
 
     <script>
+      // Identity portrait lightbox (homepage)
+      (function() {
+        var trigger = document.querySelector('.identity__photo-wrap');
+        var photo = document.querySelector('.identity__photo');
+        if (!trigger || !photo) return;
+
+        var overlay = document.createElement('div');
+        overlay.className = 'lightbox-overlay';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-label', 'Full portrait of Mark Figart');
+
+        var contentWrapper = document.createElement('div');
+        contentWrapper.className = 'lightbox-content';
+
+        var mediaContainer = document.createElement('div');
+        mediaContainer.className = 'lightbox-media';
+
+        var closeBtn = document.createElement('button');
+        closeBtn.className = 'lightbox-close';
+        closeBtn.innerHTML = '&times;';
+        closeBtn.setAttribute('aria-label', 'Close lightbox');
+
+        contentWrapper.appendChild(mediaContainer);
+        overlay.appendChild(contentWrapper);
+        overlay.appendChild(closeBtn);
+        document.body.appendChild(overlay);
+
+        function openLightbox() {
+          var img = mediaContainer.querySelector('img');
+          if (!img) {
+            img = document.createElement('img');
+            img.alt = photo.alt || 'Mark Figart';
+            img.src = photo.currentSrc || photo.src;
+            mediaContainer.appendChild(img);
+            if (img.complete) {
+              img.classList.add('loaded');
+            } else {
+              img.onload = function() {
+                img.classList.add('loaded');
+              };
+            }
+          }
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+          closeBtn.focus();
+        }
+
+        function closeLightbox() {
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+          trigger.focus();
+        }
+
+        trigger.addEventListener('click', openLightbox);
+        closeBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          closeLightbox();
+        });
+        overlay.addEventListener('click', closeLightbox);
+        contentWrapper.addEventListener('click', function(e) {
+          e.stopPropagation();
+          closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+          if (!overlay.classList.contains('active')) return;
+          if (e.key === 'Escape') {
+            e.preventDefault();
+            closeLightbox();
+          }
+        });
+      })();
+    </script>
+
+    <script>
       // Contact modal functionality
       (function() {
         var modal = document.getElementById('contact-modal');

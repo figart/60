@@ -32,6 +32,27 @@ author:
   name: Mark Figart
   url: https://www.markfigart.com/about/
   twitter: figart
+  image: /assets/images/mark-figart-portrait.webp
+  job_title: Software engineer and founder
+  description: >-
+    Software engineer, founder of Digett, U.S. Army veteran, and Rotarian.
+    Lives in the Texas Hill Country; writes, speaks, and delivers aid vehicles
+    from London to Ukraine.
+  alumni_of: Texas A&M University
+  works_for:
+    name: Digett
+    url: https://www.digett.com
+  member_of:
+    - name: Rotary Club of San Antonio
+      url: https://www.rotarysa.org/
+  awards:
+    - Rotarian of the Year, Rotary Club of San Antonio, 2024–2025
+  knows_about:
+    - Software engineering
+    - Artificial intelligence
+    - Digital marketing
+    - Ukraine relief
+    - Rotary service
 
 logo: /assets/images/og-default.webp
 
@@ -40,6 +61,7 @@ social:
   links:
     - https://twitter.com/figart
     - https://www.linkedin.com/in/figart/
+    - https://github.com/figart
 
 twitter:
   username: figart

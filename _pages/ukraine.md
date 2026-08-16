@@ -5,6 +5,17 @@ permalink: /ukraine/
 nav_title: Ukraine
 image: /assets/images/ukraine/handing-off-two-vehicles.webp
 description: "Mark Figart has twice driven donated vehicles from London to Lviv with a Rotary convoy. He intends to return in spring 2027, raising $15,000 toward two vehicles. Give through the Rotary Club of San Antonio."
+gallery:
+  - /assets/images/ukraine/handing-off-two-vehicles.webp
+  - /assets/images/ukraine/convoy-moves-toward-lviv.webp
+  - /assets/images/ukraine/the-ambulance.webp
+  - /assets/images/ukraine/prestons-eleven.webp
+  - /assets/images/ukraine/waiting-for-the-ferry.webp
+  - /assets/images/ukraine/ukraine-american-flag.webp
+  - /assets/images/ukraine/some-of-the-crew-in-lviv.webp
+  - /assets/images/ukraine/on-the-road-toward-ukraine.webp
+  - /assets/images/ukraine/lviv-soldier-mural.webp
+  - /assets/images/ukraine/at-city-hall-in-lviv.webp
 ---
 
 ![Handing off two vehicles in Lviv. Faces obscured at the soldiers’ request.](/assets/images/ukraine/handing-off-two-vehicles.webp)
