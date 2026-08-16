@@ -17,7 +17,7 @@ When I'm not working, I'm likely on my screened-in porch, in my shop, on a trail
 
 ## The Longer Version
 
-I served in the U.S. Army as a tanker from 1983 to 1986. I earned a B.A. in Economics from Texas A&M in 1990.
+I served in the U.S. Army as a tanker from 1983 to 1986 before earning a B.A. in Economics from Texas A&M in 1990. I spent the next six months learning French by working and living with families in the rural villages of the Grand Est and Beaujolais regions of France—picking grapes, painting a house, milking cows, and pruning grape vines... in that order.
 
 I started in the early '90s as a technical writer, moved into software development, then consulting. Before Digett I held a senior management position at Emerging, a Houston-based consultancy, and did extended engagements with organizations like Goldman Sachs, Schlumberger, AIM Investments, and Delmarva Power.
 
