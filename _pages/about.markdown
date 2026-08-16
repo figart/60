@@ -17,9 +17,9 @@ When I'm not working, I'm likely on my screened-in porch, in my shop, on a trail
 
 ## The Longer Version
 
-I served in the U.S. Army as a tanker from 1983 to 1986 before earning a B.A. in Economics from Texas A&M in 1990. I spent the next six months learning French by working and living with families in the rural villages of the Grand Est and Beaujolais regions of France—picking grapes, painting a house, milking cows, and pruning grape vines... in that order.
+I served in the U.S. Army as a tanker from 1983 to 1986. My veterans benefits then helped finance my education, and I also put the darkroom skills I'd acquired during my tour of duty in Schweinfurt, Germany to good use as a part-time photographer on campus, earning a few extra dollars along the way and a B.A. in Economics from Texas A&M, College Station in 1990. I spent the next six months learning French by working and living with families in the rural villages of the Grand Est and Beaujolais regions of France—picking grapes, painting a house, milking cows, and pruning grape vines... in that order.
 
-I started in the early '90s as a technical writer, moved into software development, then consulting. Before Digett I held a senior management position at Emerging, a Houston-based consultancy, and did extended engagements with organizations like Goldman Sachs, Schlumberger, AIM Investments, and Delmarva Power.
+I started my professional career in the early '90s as a technical writer, moved into software development, then consulting. Before Digett I held a senior management position at Emerging, a Houston-based consultancy, and did extended engagements with organizations like Goldman Sachs, Schlumberger, AIM Investments, and Delmarva Power.
 
 Along the way I became convinced that most marketing is broken — not because people don't try hard enough, but because they build on weak foundations. Digett exists to do better than that, one client at a time.
 
