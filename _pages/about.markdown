@@ -31,9 +31,9 @@ I'm a member of the Rotary Club of San Antonio and was named [Rotarian of the Ye
 
 In March 2025 I joined a convoy of Rotary volunteers who drive vehicles purchased with donated funds from London to Ukraine. We crossed the Channel, drove through France, Germany, and Poland, and delivered the vehicles in Lviv. I turned 60 somewhere along the way.
 
-A month later I rode a motorcycle across Mexico with a group of friends. I'd rather be uncomfortable and alive than comfortable and bored.
+A month later I raced a motorcycle from San Antonio across Mexico to the Pacific at Playa Maruata, Michoacán against a group of strangers who became friends. I'd rather be alive and uncomfortable than bored.
 
-In March 2026 I went back to Ukraine, and had another birthday in Poland. Again we drove vehicles to Lviv. I intend to return in spring 2027. The current effort, and a way to give, is on the [Ukraine](/ukraine/) page.
+In March 2026 I returned to Ukraine via London, and had another birthday in Poland. Again we delivered vehicles to Lviv. I intend to return in spring 2027. The current effort, and a way to give, is on the [Ukraine](/ukraine/) page.
 
 ### What I Care About
 
