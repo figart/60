@@ -225,11 +225,11 @@
   list-style: none;
 
   > li {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.05rem;
 
     > a.post-link {
       display: block;
-      padding: 1rem 0.9375rem;
+      padding: 0.55rem 0.9375rem;
       margin: 0 -0.9375rem;
       border-radius: 0.5rem;
       color: inherit;
@@ -1404,6 +1404,33 @@
 
   &__where {
     font-weight: 600;
+  }
+}
+
+.home-block--speaking {
+  p {
+    margin-bottom: 1.1rem;
+  }
+
+  .home-block__subhead {
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .engagements li {
+    padding: 1.5rem 0;
+  }
+
+  .engagements time {
+    margin-bottom: 0.35rem;
+  }
+
+  .engagements__where {
+    margin-bottom: 0.2rem;
+  }
+
+  .home-block__actions {
+    margin-top: 1.75rem;
   }
 }
 
