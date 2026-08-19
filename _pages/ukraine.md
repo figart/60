@@ -36,7 +36,7 @@ The effort is organized by Rotary volunteers in the UK, with support from clubs 
 
 ## What I have done
 
-In March 2025 I joined the convoy for the first time. We crossed the Channel, drove through France, Germany, and Poland, and delivered vehicles in Lviv. I turned 60 on that road.
+In March 2025 I joined the convoy for the first time. We crossed the Channel, drove through France, Germany, and Poland, and delivered vehicles to soldiers waiting in Lviv. I turned 60 on that road.
 
 In March 2026 I went back. Same route, another birthday in Poland, another handoff in Lviv.
 

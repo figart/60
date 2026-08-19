@@ -29,7 +29,7 @@ I write software. I use AI as a working partner on real builds — sites, tools,
 
 I'm a member of the Rotary Club of San Antonio and was named [Rotarian of the Year](https://www.rotarysa.org/news/rotary-club-of-san-antonio-honors-four-members-at-annual-awards-presentation){:target="_blank"} for the 2024–2025 Rotary year. Rotary is a grounding force — a reminder that service can be both effective _and_ a lot of fun.
 
-In March 2025 I joined a convoy of Rotary volunteers who drive vehicles purchased with donated funds from London to Ukraine. We crossed the Channel, drove through France, Germany, and Poland, and delivered the vehicles in Lviv. I turned 60 somewhere along the way.
+In March 2025 I joined a convoy of Rotary volunteers who drive vehicles purchased with donated funds from London to Ukraine. We crossed the Channel, drove through France, Germany, and Poland, and delivered the vehicles to grateful soldiers in Lviv. I turned 60 somewhere along the way.
 
 A month later I raced a motorcycle from San Antonio across Mexico to the Pacific at Playa Maruata, Michoacán with a group of strangers who became friends. I'd rather be alive and uncomfortable than bored.
 
